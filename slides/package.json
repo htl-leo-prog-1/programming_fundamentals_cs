@@ -1,0 +1,37 @@
+{
+  "name": "programming-fundamentals-csharp",
+  "version": "1.0.0",
+  "description": "Slides for Programming Fundamentals (C#)",
+  "author": "Rainer Stropek",
+  "license": "MIT",
+  "scripts": {
+    "clean": "node ./util/clean.js",
+    "build": "node ./util/build.js",
+    "watch-build": "watch 'npm run build' src util --interval=1",
+    "watch-start": "live-server --port=8080 --quiet dist",
+    "start": "npm-run-all -p watch-*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htl-leo-prog-1/programming_fundamentals_cs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htl-leo-prog-1/programming_fundamentals_cs/issues"
+  },
+  "homepage": "https://github.com/htl-leo-prog-1/programming_fundamentals_cs/",
+  "dependencies": {
+    "reveal.js": "^4.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.14",
+    "fs-extra": "^10.0.0",
+    "lec": "^1.0.1",
+    "line-ending-corrector": "^1.0.1",
+    "live-server": "^1.2.1",
+    "md5-file": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "recursive-copy": "^2.0.11",
+    "watch": "^1.0.2"
+  },
+  "type": "module"
+}
