@@ -2,6 +2,7 @@ import { join } from "path";
 import pkgEsbuild from "esbuild";
 const { build } = pkgEsbuild;
 import copy from "recursive-copy";
+import replace from "replace-in-file";
 
 (async () => {
   // Copy HTML and Markdown files
@@ -19,6 +20,12 @@ import copy from "recursive-copy";
     ],
   };
   await copy("src", "dist", options);
+  const replaceOptions = {
+    files: 'dist/**/*.md',
+    from: /[Ss]tatement(s)?/g,
+    to: (match) => `<span translate="no">&nbsp;${match}&nbsp;</span>`,
+  };
+  await replace(replaceOptions);
 
   // Copy favicon-related files
   await copy("favicon", "dist", { overwrite: true });

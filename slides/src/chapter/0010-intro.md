@@ -12,10 +12,12 @@ Programming Course @ HTL Leonding
 
 ## We Program in C#
 
-* A <!-- .element: class="fragment" --> **Programming Language** is the language we use to tell the computer what we want it to do
-* We <!-- .element: class="fragment" --> use the **Programming Language** [C#](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
+> A **Programming Language** is the language we use to tell the computer what we want it to do
+
+* We <!-- .element: class="fragment" --> use the programming language **[C#](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)**
   * The *C* comes from the classical programming language [C](https://en.wikipedia.org/wiki/C_(programming_language))
   * The *#* comes from the chromatic sign (*Kreuz*-[Vorzeichen](https://de.wikipedia.org/wiki/Vorzeichen_(Musik))) in music (is called *Sharp* in English)
+* C# <!-- .element: class="fragment" --> is one of the top 10 most popular programming languages ([source](https://survey.stackoverflow.co/2022/#most-popular-technologies-language))
 
 
 ## Our Platform is *.NET*
@@ -29,7 +31,9 @@ Programming Course @ HTL Leonding
 * We <!-- .element: class="fragment" --> use the **[.NET Platform](https://dotnet.microsoft.com/en-us/)**
   * Free, [Open Source Software](https://en.wikipedia.org/wiki/Open-source_software)
   * Runs on many types of computers (e.g. Windows, Linux, Mac, Android, iOS, etc.)
-* You <!-- .element: class="fragment" --> could use .NET with many different programming languages, but we use C#
+* .NET <!-- .element: class="fragment" --> works with many programming languages
+  * In this course we use C#
+  * Other .NET languages would be for instance *F#* or *Visual Basic*
 
 
 ## What Do We Need to Get Started?
@@ -41,10 +45,13 @@ Programming Course @ HTL Leonding
 
 * An <!-- .element: class="fragment" --> **Editor** to type in the code
   * Examples: [vim](https://www.vim.org/), [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), [Visual Studio](https://visualstudio.microsoft.com/)
+  * We will start with *Notepad* and switch to *Visual Studio Code* later
 * A <!-- .element: class="fragment" --> **Shell** where we can type commands
   * Examples: [cmd](https://en.wikipedia.org/wiki/Cmd.exe), [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701), [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
-* A <!-- .element: class="fragment" --> **Compiler** to turn our human-readable code into machine-readable program
-* Installed <!-- .element: class="fragment" --> version of [.NET](https://dotnet.microsoft.com/en-us/download) to run our program
+* The <!-- .element: class="fragment" --> **C# Compiler** to turn our code into machine-readable programs
+  * Is part of the [*.NET SDK*](https://dotnet.microsoft.com/en-us/download) (Software Development Kit)
+* Installed <!-- .element: class="fragment" --> **[.NET Runtime](https://dotnet.microsoft.com/en-us/download)** to run our program
+  * Note: *.NET Runtime* is included in the *.NET SDK*
 
 
 ## Enough Theory
@@ -63,9 +70,11 @@ Programming Course @ HTL Leonding
 
 * Which <!-- .element: class="fragment" --> version of .NET is installed on your computer?
   * In your shell, type in: `dotnet --version`
-  * Do you get an error? Install the latest version of [.NET](https://dotnet.microsoft.com/en-us/download).
+  * Do you get an error? Install the latest version of the [.NET SDK](https://dotnet.microsoft.com/en-us/download)
 * Create <!-- .element: class="fragment" --> your first C# program
   * Type in: `dotnet new console`
+* Look <!-- .element: class="fragment" --> at what has been created
+  * Type in: `dir`
 * Take <!-- .element: class="fragment" --> a look at the code and try to guess what it will do
   * Type in: `type Program.cs`
 * Compile <!-- .element: class="fragment" --> the program
@@ -79,13 +88,13 @@ Programming Course @ HTL Leonding
 > Change the message that is printed on the screen
 
 * Open *Program.cs* in any editor that you have on your computer
-  * Tip: If you have nothing else, a program called *Notepad* is installed on every Windows computer
+  * If you have nothing else, a program called *Notepad* is installed on every Windows computer
 * Try to change the message
-  * Tip: Only change the text **inside** of the double quotes, do not remove them!
+  * Only change the text *inside* of the double quotes, do *not* remove them!
 * Run the program again and see whether your message is printed
   * To run, type in: `dotnet run`
 
 
-## Well done
+## Well done 👍
 
 ![Coffee into code](https://media4.giphy.com/media/SXxI9NlwvYiY3bRsck/giphy.gif?cid=790b761173bba9e799b0d66a53e5d1740ff081d372bbfe3a&rid=giphy.gif&ct=g)
