@@ -1,4 +1,4 @@
-# Data Types
+# Literals, Constants, Variables, and Data Types
 
 ![Cause you just my type](https://media3.giphy.com/media/xTaWnRVrazwn9fOdwc/giphy.gif?cid=ecf05e47wu6k72jozly05v1chrlzgw4c7h8a6pm5ouqq1lzv&rid=giphy.gif&ct=g)
 
@@ -17,6 +17,7 @@
   * E.g. `const int ANSWER = 42;` or `const string GREETING = "Hello World";`
 * A <!-- .element: class="fragment" --> **Variable** is a symbolic name whose value *can* change
   * The names of constants in C# are usually written in *lowercase letters*.
+  * **Assignment**: <span translate="no">&nbsp;Statement&nbsp;</span> that assigns a value to a variable
   * E.g. `int answer = 42;` or `string greeting = "Hello World";`
 * The <!-- .element: class="fragment" --> **data type** defines what values the constant or variable can contain
   * E.g. strings, integer numbers
@@ -104,8 +105,19 @@ Console.Write(name);
 |-----------|-------------|
 | [`string`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-string-type) | Sequence of zero or more characters |
 | [`char`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | Single character |
+| [`bool`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool) | Boolean value (`true` or `false`) |
 | [`int`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Integral numeric values (no decimal places) |
 | [`float`, `double`, and `decimal`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types) | Floating point numeric values (general guideline: Use `double` for mathematical calculations, use `decimal` for monetary values) |
+
+
+## String Parsing
+
+* The <!-- .element: class="fragment" --> process or turning a string into another data type is called **Parsing**.
+* Example <!-- .element: class="fragment" -->:
+  * Ask the user to enter a number
+  * The number you get is a `string`
+  * You have to *parse* the string to get an `int` value with which you can calculate
+* Code: <!-- .element: class="fragment" --> `int myIntegerValue = int.Parse("42");`
 
 
 ## Important Operators
@@ -118,12 +130,86 @@ Console.Write(name);
   * Relational operators (`>`, `<`, `>=`, `<=`)
   * Check if equal (`==`)
   * Check if not equal (`!=`)
+* Not <!-- .element: class="fragment" --> all operators make sense for all types. Examples:
+  * `+` for integer values 👍 - obviously works
+  * `/` for string values 🤔 - makes no sense
+  * `>` for boolean values 🤔 - also makes no sense
 
 
-## Confused Again?
+## Enough Theory - Show Me the Code
 
-![Confused](https://karolakarlson.com/wp-content/uploads/2017/03/confused-1.gif)
-
-> Let's exercise to get a deeper understanding.
+![Enough theory](https://i.giphy.com/13uaMxgBhGP9ba.gif)
 
 
+## Example: Area Calculator
+
+```cs [|1-2|5|8-9|13-14|16|18]
+Console.BackgroundColor = ConsoleColor.Red;             // Note: Assignment
+Console.ForegroundColor = ConsoleColor.White;           // Note: Assignment
+Console.Clear();
+
+Console.WriteLine("Welcome to the AREA CALCULATOR\n");  // Note: \n for additional empty line
+
+Console.Write("Please enter the length of the room: ");
+int length = int.Parse(Console.ReadLine()!);            // Note: Variable declaration and assignment
+                                                        // Also note: Parsing
+Console.Write("Please enter the width of the room: ");
+int width = int.Parse(Console.ReadLine()!);
+
+int area = length * width;                              // Note: Variable declaration and assignment
+                                                        // Also note: Multiplication operator
+
+Console.WriteLine("The area of the room is: " + area);  // Note: String concatination with + operator
+Console.WriteLine("Press any key to exit.");
+Console.ReadKey();                                      // Wait until user presses any key
+
+Console.BackgroundColor = ConsoleColor.Black;
+Console.ForegroundColor = ConsoleColor.White;
+Console.Clear();
+```
+
+
+## Example: Number Analyzer
+
+```cs [|2|4|5-6|8-9|11-12]
+Console.Write("Please enter a number: ");
+int number = int.Parse(Console.ReadLine()!);
+
+int remainder = number % 2;
+bool isEvenNumber = remainder == 0;
+Console.WriteLine("It is " + isEvenNumber + " that the number is even.");
+
+bool isGreaterThanFive = number > 5;
+Console.WriteLine("It is " + isGreaterThanFive + " that the number is greater than 5.");
+
+number++;
+Console.WriteLine("The next number is " + number);
+```
+
+
+## Example: Area Calculator For Circles
+
+> Build an area calculator like before, but this time for circles, not rectangles
+
+* Ask the user for the radius of the circle.
+* The formula for calculating the area of a circle is `A = π * r²`
+  * Use a *constant* for π and use the value 3.1415927
+* Print the area of the circle on the screen.
+
+
+## Pro Tips
+
+![Like a boss](https://c.tenor.com/TgDOSZ0PpNsAAAAd/zoolander-boss.gif)
+
+
+## <span translate="no">&nbsp;Expressions&nbsp;</span>
+
+> We call calculations that result in a value of a certain type **<span translate="no">&nbsp;Expressions&nbsp;</span>**
+
+* <span translate="no">&nbsp;Expressions&nbsp;</span> from previous examples:
+  * `length * width` - result is a number
+  * `number % 2` - result is a number
+  * `remainder == 0` - result is a boolean value (`true` or `false`)
+  * `number > 5` - result is a boolean value (`true` or `false`)
+  * `"The next number is " + number` - result is a string
+* <span translate="no">&nbsp;Expressions&nbsp;</span> will become very important in more advanced code examples
