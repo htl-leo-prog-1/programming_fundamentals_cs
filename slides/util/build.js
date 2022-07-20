@@ -22,7 +22,7 @@ import replace from "replace-in-file";
   await copy("src", "dist", options);
   const replaceOptions = {
     files: 'dist/**/*.md',
-    from: /[Ss]tatement(s)?/g,
+    from: [/[Ss]tatement(s)?/g, /[Ee]xpression(s)?/g],
     to: (match) => `<span translate="no">&nbsp;${match}&nbsp;</span>`,
   };
   await replace(replaceOptions);

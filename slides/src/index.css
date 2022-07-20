@@ -38,3 +38,7 @@ code {
 .reveal ul li:first-of-type {
   margin-top: 0;
 }
+
+.reveal code {
+  font-size: smaller;
+}
