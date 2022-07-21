@@ -7,7 +7,7 @@
 
 The program we generated in the previous exercise looked like that:
 
-```cs
+```cs [|1-3|4-6]
 ┌────────────────────────────────────────────────────────────────┐
 │// See https://aka.ms/new-console-template for more information ◄────── Comment line
 └────────────────────────────────────────────────────────────────┘
@@ -56,7 +56,7 @@ Console.WriteLine("Thank you for using my program");
 * There <!-- .element: class="fragment" --> is also `Console.Write` (without `Line`)
   * Does *not* move to next line
 
-```cs
+```cs [|1-4|6-10]
 // The following three lines print three stars, each in a SEPARATE line.       
 Console.WriteLine("*");                                                        
 Console.WriteLine("*");                                                        

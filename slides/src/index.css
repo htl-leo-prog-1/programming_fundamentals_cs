@@ -42,3 +42,7 @@ code {
 .reveal code {
   font-size: smaller;
 }
+
+.reveal img {
+  max-height: 70vh;
+}

@@ -199,7 +199,7 @@ Console.WriteLine("The next number is " + number);
 
 ## Pro Tips
 
-![Like a boss](https://c.tenor.com/TgDOSZ0PpNsAAAAd/zoolander-boss.gif)
+![We are very professional](https://www.meme-arsenal.com/memes/20c8fb489b732dc6ed6512c257f40924.jpg)
 
 
 ## Expressions
@@ -212,4 +212,21 @@ Console.WriteLine("The next number is " + number);
   * `remainder == 0` - result is a boolean value (`true` or `false`)
   * `number > 5` - result is a boolean value (`true` or `false`)
   * `"The next number is " + number` - result is a string
+* As you can see, expressions do *not* end with a semicolon
 * Expressions will become very important in more advanced code examples
+
+
+## Don't Repeat Yourself (DRY)
+
+![Don't make me repeat myself](https://memegenerator.net/img/instances/47652559/dont-make-me-repeat-myself.jpg)
+
+
+## Don't Repeat Yourself (DRY)
+
+> **Avoid repeating** the same code or data in your code!
+
+Not good:
+
+```cs
+
+```
