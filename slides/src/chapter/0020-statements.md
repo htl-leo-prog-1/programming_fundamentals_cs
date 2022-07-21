@@ -9,10 +9,10 @@ The program we generated in the previous exercise looked like that:
 
 ```cs [|1-3|4-6]
 ┌────────────────────────────────────────────────────────────────┐
-│// See https://aka.ms/new-console-template for more information ◄────── Comment line
+│// See https://aka.ms/new-console-template for more information ◄────── COMMENT line
 └────────────────────────────────────────────────────────────────┘
 ┌────────────────────────────────────┐
-│Console.WriteLine("Hello, World!"); ◄────── Statement
+│Console.WriteLine("Hello, World!"); ◄────── STATEMENT
 └────────────────────────────────────┘
 ```
 
