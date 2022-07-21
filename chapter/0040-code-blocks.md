@@ -32,11 +32,48 @@ Console.WriteLine("This stmt is at top-level again");
 
 ## Grouping Code in Blocks
 
+> Blocks Can be Nested
+
+```cs [|1-5,12-13|6-11]
+┌─────────────────────────────────────────────────┐
+│ { ◄──────────────────────────────────────────────── OUTER Block starts here 
+│   Console.WriteLine("This stmt is in");         │
+│   Console.WriteLine("the first code block");    │
+│                                                 │
+│  ┌───────────────────────────────────────────┐  │
+│  │{ ◄──────────────────────────────────────────────── INNER Block STARTS here
+│  │  Console.WriteLine("This stmt is in");    │  │
+│  │  Console.WriteLine("the inner block");    │  │
+│  │} ◄──────────────────────────────────────────────── INNER Block ENDS here
+│  └───────────────────────────────────────────┘  │
+│ } ◄──────────────────────────────────────────────── OUTER Block ends here 
+└─────────────────────────────────────────────────┘
+```
+
+
+## Grouping Code in Blocks
+
 > ⚠️ Pay **close attention** to not forget the closing `}`! ⚠️
 
 Missing `}` are tricky to find!
 
 ![Code block error](/images/CodeBlockError.png)
+
+
+## Grouping Code in Blocks
+
+> Proper indentation makes spotting errors much easier
+
+```cs [|2-4,7|5-6]
+{
+──►Console.WriteLine("This stmt is in");
+──►Console.WriteLine("the first code block"); 
+──►{
+──► ─►Console.WriteLine("This stmt is in");
+──► ─►Console.WriteLine("the inner block");
+──►}
+}
+```
 
 
 ## Why Code Blocks?
@@ -48,6 +85,7 @@ Missing `}` are tricky to find!
 
 * The <!-- .element: class="fragment" --> **visibility** of a variable is limited to a block
   * We say: The block is the **<span translate="no">&nbsp;scope&nbsp;</span>** of the variable
+  * Variables are usable inside their block **and** in nested blocks
 
 ```cs [|1-6|8|10-12]
 ┌─────────────────────────────────────────────────┐
