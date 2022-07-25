@@ -58,11 +58,12 @@ Console.WriteLine("This stmt is at top-level again");
 Missing `}` are tricky to find!
 
 ![Code block error](/images/CodeBlockError.png)
+<!-- .element: class="fragment" -->
 
 
 ## Grouping Code in Blocks
 
-> Proper indentation makes spotting errors much easier
+> Proper **Indentation** makes spotting errors much easier
 
 ```cs [|2-4,7|5-6]
 {
@@ -95,10 +96,10 @@ Missing `}` are tricky to find!
 │ }                                               │
 └─────────────────────────────────────────────────┘
 
-Console.WriteLine("The answer is " + answer); ◄────── ⚠️ Does NOT work because variable answer IS NOT visible here
+Console.WriteLine("The answer is " + answer); ◄────── ⚠️💔 Does NOT work because variable answer IS NOT visible here
 
 {
-    Console.WriteLine("The answer is " + answer); ◄── ⚠️ Does NOT work because variable answer IS NOT visible here
+    Console.WriteLine("The answer is " + answer); ◄── ⚠️💔 Does NOT work because variable answer IS NOT visible here
 }
 ```
 <!-- .element: class="fragment" -->
