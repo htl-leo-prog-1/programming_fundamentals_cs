@@ -54,6 +54,20 @@ Programming Course @ HTL Leonding
   * Note: *.NET Runtime* is included in the *.NET SDK*
 
 
+## How to Practice Without .NET Installed
+
+* Sometimes <!-- .element: class="fragment" --> you might need to practice and you are on a computer without .NET
+  * E.g. your parents' computer, a computer in a public library, etc.
+* You <!-- .element: class="fragment" --> can use **Online Development Environments** for C#. Examples:
+  * <span translate="no">[.NET Fiddle](https://dotnetfiddle.net/)</span>
+  * [sharplab.io](https://sharplab.io/)
+  * [Microsoft's .NET In-Browser Tutorial](https://dotnet.microsoft.com/en-us/learn/dotnet/in-browser-tutorial/1)
+* ⚠️ <!-- .element: class="fragment" --> Be careful regarding C# and .NET versions
+  * Some online development environments are not up to date
+  * Some are specific for trying out preview versions
+  * So, online development environments shouldn't be your primary development tool
+
+
 ## Enough Theory
 
 ![Enough theory](https://i.giphy.com/13uaMxgBhGP9ba.gif)

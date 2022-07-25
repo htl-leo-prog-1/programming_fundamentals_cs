@@ -45,7 +45,7 @@ Console.WriteLine("Thank you for using my program");
 * How <!-- .element: class="fragment" --> many **<span translate="no">&nbsp;Statements&nbsp;</span>**?
 
 
-## What is [`Console.WriteLine`](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline)?
+## What is [`Console.WriteLine`](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline#system-console-writeline(system-string))?
 
 * It <!-- .element: class="fragment" --> is a **Function** provided by .NET
   * We will learn a lot more about functions later
@@ -75,18 +75,19 @@ Console.Write("*");
 
 > Write a program that prints a cooking recipe on the screen
 
-* Create *your own* recipe
-  * Do *not* just copy the example on the next slides, 
-* Format the output nicely. Examples:
+* Create <!-- .element: class="fragment" --> *your own* recipe
+  * Do *not* just copy the example on the next slides
+* Format <!-- .element: class="fragment" --> the output nicely. Examples:
   * Use uppercase letters for headings
   * Underline headings with special characters like `=`, `*`, or `-`
   * Add [*ASCII Art*](https://patorjk.com/software/taag/#p=display&f=Big&t=Lasagne)
-* Try to use emoji characters where it makes sense
+* Try <!-- .element: class="fragment" --> to use emoji characters where it makes sense
   * Tip: Put the following <span translate="no">&nbsp;statement&nbsp;</span> at the beginning of your program to make emojis work:
 
 ```cs
 Console.OutputEncoding = System.Text.Encoding.Default;
 ```
+<!-- .element: class="fragment" -->
 
 
 ## Example Recipe

@@ -61,7 +61,7 @@ Console.WriteLine(SCHOOL_ADDRESS); // Here we use the constant
 
 Console.Write("Please drive me to school at ");
 Console.WriteLine(SCHOOL_ADDRESS); // Here we use the constant again.
-                                   // We do NOT have to repeat the school's address!
+                                   // We DO NOT have to repeat the school's address 👍
 
 // Let's define an Integer Constant and use it
 const int NUMBER_OF_STUDENTS = 31;
@@ -97,6 +97,18 @@ Console.Write(name);
 <!-- .element: class="fragment" -->
 
 
+## What is [`Console.ReadLine`](https://docs.microsoft.com/en-us/dotnet/api/system.console.readline)?
+
+* It <!-- .element: class="fragment" --> is a function provided by .NET like our good, old friend `Console.WriteLine`,
+* Its <!-- .element: class="fragment" --> full name is `System.Console.ReadLine`
+* Reads <!-- .element: class="fragment" --> a line of text from **Standard Input**
+  * For now, *Standard Input* is the keyboard
+  * Can be changed (you will learn more about that later)
+* There <!-- .element: class="fragment" --> is also `Console.ReadKey` (`Key` instead of `Line`)
+  * Reads a *single* character
+  * Waits (i.e. pauses the program) until the user pressed a key
+
+
 ## Data Types
 
 > C# has [a lot of data types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types). For now, you will need:
@@ -112,11 +124,11 @@ Console.Write(name);
 
 ## String Parsing
 
-* The <!-- .element: class="fragment" --> process or turning a string into another data type is called **Parsing**.
+* The <!-- .element: class="fragment" --> process of turning a string into another data type is called **Parsing**.
 * Example <!-- .element: class="fragment" -->:
   * Ask the user to enter a number
   * The number you get is a `string`
-  * You have to *parse* the string to get an `int` value with which you can calculate
+  * You have to *parse* the string to get an `int` value with which you can do calculations
 * Code: <!-- .element: class="fragment" --> `int myIntegerValue = int.Parse("42");`
 
 
@@ -191,10 +203,11 @@ Console.WriteLine("The next number is " + number);
 
 > Build an area calculator like before, but this time for circles, not rectangles
 
-* Ask the user for the radius of the circle.
-* The formula for calculating the area of a circle is `A = π * r²`
+* Ask <!-- .element: class="fragment" --> the user for the radius of the circle.
+* The <!-- .element: class="fragment" --> formula for calculating the area of a circle is `A = π * r²`
   * Use a *constant* for π and use the value 3.1415927
-* Print the area of the circle on the screen.
+  * Pro tip: Use the pre-defined constant [`System.Math.PI`](https://docs.microsoft.com/en-us/dotnet/api/system.math.pi)
+* Print <!-- .element: class="fragment" --> the area of the circle on the screen.
 
 
 ## Pro Tips
