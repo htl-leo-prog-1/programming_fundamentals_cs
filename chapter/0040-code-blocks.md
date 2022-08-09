@@ -124,7 +124,7 @@ Console.WriteLine("The answer is " + answer); ◄────── ⚠️💔 D
 │ {                                                     │
 │   Console.Write("Enter your friend's name: ");        │
 │   string name = Console.ReadLine()!; ◄────────────────── Variable SCOPED to second code block
-│   Console.WriteLine("Your friend's name is " + name); │
+│   Console.WriteLine("Your friend's name is " + name); │  This IS A DIFFERENT variable called `name`
 │ }                                                     │
 └───────────────────────────────────────────────────────┘
 ```
@@ -142,3 +142,8 @@ Console.WriteLine("The answer is " + answer); ◄────── ⚠️💔 D
   * Named code blocks are called **functions**
   * We can call functions wherever we need them in our code
   * You will learn more about functions later in this course
+
+
+## Tell me more!
+
+![Whaaat!?](https://c.tenor.com/VkvsmJYlumYAAAAC/whaat-huh.gif)

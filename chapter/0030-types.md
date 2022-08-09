@@ -115,11 +115,25 @@ Console.Write(name);
 
 | Data Type | Description |
 |-----------|-------------|
-| [`string`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-string-type) | Sequence of zero or more characters |
-| [`char`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | Single character |
+| [`string`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-string-type) | Sequence of zero or more characters (Unicode) |
+| [`char`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | Single character (Unicode) |
 | [`bool`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool) | Boolean value (`true` or `false`) |
-| [`int`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Integral numeric values (no decimal places) |
+| [`int`, `long`, `short`, etc.](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Integral numeric values (no decimal places) |
 | [`float`, `double`, and `decimal`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types) | Floating point numeric values (general guideline: Use `double` for mathematical calculations, use `decimal` for monetary values) |
+
+
+## Literals for Data Types
+
+| Data Type | Example Literal    | Notes                |
+|-----------|--------------------|----------------------|
+| `string`  | `"Hello World"`    | Double quotes        |
+| `char`    | `'A'`              | Single quotes        |
+| `bool`    | `true`, `false`    |                      |
+| `int`     | `42`               |                      |
+| `long`    | `42L`              | Suffix *L* (=long)   |
+| `float`   | `42f`              | Suffix *f* (=float)  |
+| `double`  | `42d`              | Suffix *d* (=double) |
+| `decimal` | `42m`              | Suffix *m* (=money)  |
 
 
 ## String Parsing
@@ -210,6 +224,23 @@ Console.WriteLine("The next number is " + number);
 * Print <!-- .element: class="fragment" --> the area of the circle on the screen.
 
 
+## Example: Going for Gold ⛏️🪙
+
+* You <!-- .element: class="fragment" --> are programming a computer game
+  * Players gather ore ⛏️ and sell it to get gold coins 🪙
+* Rules <!-- .element: class="fragment" -->
+  * 🥇 For the first 10 pieces of ore, the player gets 10 coins per piece
+  * 🥈 For the next 5 pieces of ore, the player gets 5 coins per piece
+  * 🥉 For the next 3 pieces of ore, the player gets 2 coins per piece
+  * For all remaining pieces of ore, the player gets 1 coin per piece
+* Examples <!-- .element: class="fragment" -->
+  * Player gathered 25 pieces of ore, she gets *10 \* 10 + 5 \* 5 + 3 \* 2 + 7 \* 1 = 138* golden coins
+  * Player gathered 11 pieces of ore, she gets *10 \* 10 + 1 \* 5 = 105* golden coins
+* Write <!-- .element: class="fragment" --> a program to do the calculation:
+  * Ask the user to enter the pieces of gathered ore
+  * Print the amount of gold coins the player receives for the ore
+
+
 ## Pro Tips
 
 ![We are very professional](https://www.meme-arsenal.com/memes/20c8fb489b732dc6ed6512c257f40924.jpg)
@@ -229,17 +260,31 @@ Console.WriteLine("The next number is " + number);
 * <span translate="no">&nbsp;Expressions&nbsp;</span> will become very important in more advanced code examples
 
 
-## Don't Repeat Yourself (DRY)
+## Advanced Integer Literals
+
+* Use <!-- .element: class="fragment" --> `0x` prefix to specify a numeric literal in hexadecimal format
+  * E.g. `0x10` = `16`
+* Use <!-- .element: class="fragment" --> `0b` prefix to specify a numeric literal in binary format
+  * E.g. `0b1000` = `8`
+* Use <!-- .element: class="fragment" --> `_` for digit grouping
+  * E.g. `1_000_000`
+* Find <!-- .element: class="fragment" --> out [more](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
+
+
+## Type Inference
+
+* In <!-- .element: class="fragment" --> many cases, the compiler can figure out the data type of a variable for you
+  * Use the **var** keyword for that
+  * Instead of `int x = 42;`, you can write `var x = 42;`
+  * Instead of `string s = "Hello World";`, you can write `var s = "Hello World";`
+  * Instead of `int number = int.Parse(input);`, you can write `var number = int.Parse(input);`
+* ⚠️ <!-- .element: class="fragment" --> Be careful with `var`
+  * If you are not yet very familiar with C# data types, avoid `var`
+  * You can use `var` when you gathered more experience in writing C#
+
+
+## Avoid repeating
+
+...the same <span translate="no">&nbsp;expressions&nbsp;</span> in your code over and over again. Use constants or variables instead!
 
 ![Don't make me repeat myself](https://memegenerator.net/img/instances/47652559/dont-make-me-repeat-myself.jpg)
-
-
-## Don't Repeat Yourself (DRY)
-
-> **Avoid repeating** the same code or data in your code!
-
-Not good:
-
-```cs
-
-```
