@@ -150,7 +150,7 @@ Console.Write(name);
 
 * For <!-- .element: class="fragment" --> numeric types: [Arithmetic Operators](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators)
   * Basic algorithmic operations (`+`, `-`, `/`, `*`)
-  * Increment (`++`) and decrement (`--`)
+  * Increment (`++`, `+=`) and decrement (`--`, `-=`)
   * Remainder (often referred to as *Modulo*) (`%`)
 * To <!-- .element: class="fragment" --> compare values: [Comparison Operators](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators)
   * Relational operators (`>`, `<`, `>=`, `<=`)
@@ -160,6 +160,22 @@ Console.Write(name);
   * `+` for integer values 👍 - obviously works
   * `/` for string values 🤔 - makes no sense
   * `>` for boolean values 🤔 - also makes no sense
+
+
+## Examples: Increment, Decrement
+
+```cs[|3-4|6-7|9-10]
+int i = 1;
+
+i = i + 1; // i is now 2
+i = i - 1; // i is now back to 1
+
+i++; // i is now 2
+i--; // i is now back to 1
+
+i += 2; // i is now 3
+i -= 2; // i is now back to 1
+```
 
 
 ## Enough Theory - Show Me the Code
@@ -281,10 +297,3 @@ Console.WriteLine("The next number is " + number);
 * ⚠️ <!-- .element: class="fragment" --> Be careful with `var`
   * If you are not yet very familiar with C# data types, avoid `var`
   * You can use `var` when you gathered more experience in writing C#
-
-
-## Avoid repeating
-
-...the same <span translate="no">&nbsp;expressions&nbsp;</span> in your code over and over again. Use constants or variables instead!
-
-![Don't make me repeat myself](https://memegenerator.net/img/instances/47652559/dont-make-me-repeat-myself.jpg)
