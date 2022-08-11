@@ -135,7 +135,7 @@ for ( │ int n = 0 │ ; │ n < 3 │ ; │ n++ │ )
   * Increment/decrement: <!-- .element: class="fragment" --> Executed **AFTER each execution of code block** and **BEFORE condition**
 
 
-## The `for` Loop
+## The `for` Loop 💪
 
 ```cs
 for (int n = 0; n < 3; n++)
@@ -154,7 +154,7 @@ for (int n = 0; n < 3; n++)
 8. Is <!-- .element: class="fragment" --> *n < 3*? **No**. So end program.
 
 
-## Exercise: Number Guessing Game
+## Exercise: Number Guessing Game 🎲
 
 1. Generate <!-- .element: class="fragment" --> a random number between 0 (including) and 99 (including)
 2. Ask <!-- .element: class="fragment" --> the user for a guess
@@ -166,7 +166,7 @@ for (int n = 0; n < 3; n++)
    * Once the user has guessed correctly, end the program
 
 
-## Exercise: Number Guessing Game
+## Exercise: Number Guessing Game 🎲
 
 Example output:
 
@@ -179,3 +179,181 @@ Too High
 Please guess: 51
 Correct
 ```
+
+
+## Exercise: Nested Loops, Level 1 😀
+
+> Having loops inside of loops is quite common. We call this **nested loops**.
+
+Example: Draw a square of 10 x 10 smiling faces <!-- .element: class="fragment" -->
+
+```cs[|4|6]
+// This enables emojis
+Console.OutputEncoding = System.Text.Encoding.Default;
+
+for (int y = 0; y < 15; y++)
+{
+    for (int x = 0; x < 15; x++)
+    {
+        Console.Write("😀");
+    }
+
+    Console.WriteLine();
+}
+```
+<!-- .element: class="fragment" -->
+
+
+## Exercise: Nested Loops, Level 2 😀🍕
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+* Change <!-- .element: class="fragment" --> the previous example
+  * First line should consist of 😀
+  * Second line should consist of 🍕
+  * Third line should be 😀 again
+  * Etc.
+
+</div><div class="col" data-markdown>
+
+![Loops different lines](/images/loops-different-lines.png)
+<!-- .element: class="fragment" -->
+
+</div></div>
+
+
+## Exercise: Nested Loops, Level 3 😀🍕
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+* Change <!-- .element: class="fragment" --> the previous example
+  * First element should be 😀
+  * Next element should be 🍕
+  * Third element should be 😀 again
+  * Etc.
+
+</div><div class="col" data-markdown>
+
+![Loops changing](/images/loops-changing.png)
+<!-- .element: class="fragment" -->
+
+</div></div>
+
+
+### Exercise: Speed Coding Challenge
+
+![Speed Minion](https://media4.giphy.com/media/fBEMsUeGHdpsClFsxM/giphy.gif?cid=ecf05e47waysr97y1bx1rnzh4d9jj9iiu93459corz84xd71&rid=giphy.gif&ct=g)
+
+
+### Exercise: Speed Coding Challenge
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+1. Text-based <!-- .element: class="fragment" --> animation
+2. Character <!-- .element: class="fragment" --> starts in top left corner
+3. Moves <!-- .element: class="fragment" --> in random direction<br/>(must not move out of screen)
+   * No movement or ⬅️↖️⬆️↗️➡️↘️⬇️↙️
+4. Wait <!-- .element: class="fragment" --> to slow down animation
+5. Start <!-- .element: class="fragment" --> over with step 3
+6. End <!-- .element: class="fragment" --> program when user presses a key
+
+</div><div class="col" data-markdown>
+
+![Dancing Star](/images/dancing-star.gif)
+
+</div></div>
+
+
+### Exercise: Speed Coding Challenge
+
+> Here is the code. Type it in and make it work as fast as you can! You are *not* allowed to copy/paste it!
+
+```cs
+const int SLEEP_TIME = 50; // Sleep time in milliseconds
+const char ANIMATED_CHAR = '*';
+
+// Hide cursor. Reduces flickering.
+Console.CursorVisible = false;
+
+// Clear console and write first * on position x=0/y=0.
+// NOTE that after writing the first *, the new position is 1/0.
+Console.Clear();
+Console.Write(ANIMATED_CHAR);
+
+// Let the process sleep for a while to make animation slower.
+Thread.Sleep(SLEEP_TIME);
+
+// Loop until the user presses any key.
+while(!Console.KeyAvailable)
+{
+    // Write a Backspace and overwrite * with a space so that the * disappears.
+    Console.Write("\b ");
+
+    // Set default boundaries for random movement
+    int xMinMovement = -1; // We can to left
+    int xMaxMovement = 1; // We can to right
+    int yMinMovement = -1; // We can to up
+    int yMaxMovement = 1; // We can to down
+
+    // Get cursor position.
+    // NOTE that GetCursorPosition returns two values: left and top.
+    (int left, int top) = Console.GetCursorPosition();
+
+    // Correct cursor position. It is one off because we just wrote a space and that
+    // moved the cursor one step forward in X direction.
+    left--;
+
+    if (left == 0)
+    { 
+        // If we are on the leftmost position, we cannot go left any further.
+        xMinMovement = 0; 
+    }
+
+    if (left == Console.WindowWidth - 1)
+    { 
+        // If we are on the rightmost position, we cannot go right any further.
+        xMaxMovement = 0; 
+    }
+
+    if (top == 0)
+    { 
+        // If we are on the topmost position, we cannot go up any further.
+        yMinMovement = 0;
+    }
+
+    if (top == Console.WindowHeight - 1)
+    { 
+        // If we are on the bottommost position, we cannot go down any further.
+        yMaxMovement = 0; 
+    }
+
+    // Calculate random movement within calculated boundaries.
+    // NOTE that we have to add 1 to second parameter because the random value
+    // will be LOWER than the second parameter, NOT lower or equal.
+    int xMovement = Random.Shared.Next(xMinMovement, xMaxMovement + 1);
+    int yMovement = Random.Shared.Next(yMinMovement, yMaxMovement + 1);
+
+    // Go to new position and write *.
+    Console.SetCursorPosition(left + xMovement, top + yMovement);
+    Console.Write(ANIMATED_CHAR);
+
+    // Let the process sleep for a while to make animation slower.
+    Thread.Sleep(SLEEP_TIME);
+}
+
+// Enable cursor again.
+Console.CursorVisible = true;
+```
+
+
+### What We Have Learned
+
+* Hide/show <!-- .element: class="fragment" --> cursor with `Console.CursorVisible`
+* Put <!-- .element: class="fragment" --> process to sleep with `Thread.Sleep`
+* Check <!-- .element: class="fragment" --> if the user pressed a key with `Console.KeyAvailable`
+* Backspace <!-- .element: class="fragment" --> can be used to move cursor one to the left (`"\b"`)
+* Some <!-- .element: class="fragment" --> functions return multiple values
+  * Example: `(int left, int top) = Console.GetCursorPosition();`
+* We <!-- .element: class="fragment" --> can get/set cursor position
+  * `Console.GetCursorPosition`
+  * `Console.SetCursorPosition`

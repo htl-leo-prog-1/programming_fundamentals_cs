@@ -71,6 +71,39 @@ Console.Write("*");
 <!-- .element: class="fragment" -->
 
 
+## What if `Console.WriteLine` Doesn't Work?
+
+* Its <!-- .element: class="fragment" --> full name is `System.Console.WriteLine`
+* Some <!-- .element: class="fragment" --> older versions of C# and online development environment force you to use the full name
+  * Option 1: Always write `System.Console...`
+  * Option 2: Put `using System;` at the beginning of your program.
+* You will learn more about `using` and *namespaces* later
+
+```cs
+// Modern version of C#, System namespace is automatically available.
+Console.Write("Hello ");
+Console.WriteLine("World!");
+```
+<!-- .element: class="fragment" -->
+
+```cs
+// Works always. However, tedious as you have to write "System." over and over again.
+System.Console.Write("Hello ");
+System.Console.WriteLine("World!");
+```
+<!-- .element: class="fragment" -->
+
+```cs[|1-2]
+// Import namespace System
+using System;
+
+// Now you can leave out "System.". It will always work because we explicitely imported System.
+Console.Write("Hello ");
+Console.WriteLine("World!");
+```
+<!-- .element: class="fragment" -->
+
+
 ## Exercise: Recipe
 
 > Write a program that prints a cooking recipe on the screen

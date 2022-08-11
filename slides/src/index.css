@@ -46,3 +46,15 @@ code {
 .reveal img {
   max-height: 70vh;
 }
+
+.container{
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.col img {
+  margin-top: 0;
+}
