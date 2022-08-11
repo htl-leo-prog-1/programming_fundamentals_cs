@@ -77,7 +77,7 @@ Console.Write("*");
 * Some <!-- .element: class="fragment" --> older versions of C# and online development environment force you to use the full name
   * Option 1: Always write `System.Console...`
   * Option 2: Put `using System;` at the beginning of your program.
-* You will learn more about `using` and *namespaces* later
+* You <!-- .element: class="fragment" --> will learn more about `using` and *namespaces* later
 
 ```cs
 // Modern version of C#, System namespace is automatically available.
