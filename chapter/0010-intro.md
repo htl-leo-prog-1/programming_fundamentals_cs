@@ -77,7 +77,7 @@ Programming Course @ HTL Leonding
 
 * Create <!-- .element: class="fragment" --> an **empty folder** where you want to store your program
 * Open <!-- .element: class="fragment" --> a **Shell**. This is how you can do it on Windows:
-  ![Open a shell](/images/StartShell.gif)
+  ![Open a shell](../images/StartShell.gif)
 
 
 ## Enough Theory
