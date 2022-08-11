@@ -216,7 +216,7 @@ for (int y = 0; y < 15; y++)
 
 </div><div class="col" data-markdown>
 
-![Loops different lines](../images/loops-different-lines.png)
+![Loops different lines](images/loops-different-lines.png)
 <!-- .element: class="fragment" -->
 
 </div></div>
@@ -234,7 +234,7 @@ for (int y = 0; y < 15; y++)
 
 </div><div class="col" data-markdown>
 
-![Loops changing](../images/loops-changing.png)
+![Loops changing](images/loops-changing.png)
 <!-- .element: class="fragment" -->
 
 </div></div>
@@ -259,7 +259,7 @@ for (int y = 0; y < 15; y++)
 
 </div><div class="col" data-markdown>
 
-![Dancing Star](../images/dancing-star.gif)
+![Dancing Star](images/dancing-star.gif)
 
 </div></div>
 
