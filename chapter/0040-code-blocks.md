@@ -57,7 +57,7 @@ Console.WriteLine("This stmt is at top-level again");
 
 Missing `}` are tricky to find!
 
-![Code block error](/images/CodeBlockError.png)
+![Code block error](images/CodeBlockError.png)
 <!-- .element: class="fragment" -->
 
 
