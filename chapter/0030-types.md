@@ -211,6 +211,38 @@ Console.Clear();
 ```
 
 
+## Area Calculator Flowchart
+
+<div class="mermaid">
+  <pre>
+    flowchart TD
+      Start([Start]) --> Color[Switch to white text\non red background]
+      Color --> Clear[Clear screen]
+      Clear --> Welcome[/Print welcome message/]
+      Welcome --> Length[/Ask for length/]
+      Length --> Width[/Ask for width/]
+      Width --> conn((&nbsp;))
+      conn2((&nbsp;)) --> Area[Calculate area = length * width]
+      Area --> Result[/Print result/]
+      Result --> Wait[Wait for user to press a key]
+      Wait --> ColorReset[Switch back to white text\non black background]
+      ColorReset --> Stop([End])
+  </pre>
+</div>
+
+
+## Area Calculator Flowchart
+
+> A flowchart is a diagram that depicts a process, system or computer algorithm.
+<!-- .element: class="fragment" -->
+
+* Flowcharts <!-- .element: class="fragment" --> have successfully been used for a long time
+  * Also outside of computer programming
+* Readable <!-- .element: class="fragment" --> for programmers and end users
+  * Great way to communicate process structure between technical and business experts
+* Read <!-- .element: class="fragment" --> [more](https://www.lucidchart.com/pages/what-is-a-flowchart-tutorial)
+
+
 ## Example: Number Analyzer
 
 ```cs [|2|4|5-6|8-9|11-12]
