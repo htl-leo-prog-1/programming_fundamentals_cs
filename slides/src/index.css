@@ -58,3 +58,38 @@ code {
 .col img {
   margin-top: 0;
 }
+
+svg .code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+
+svg .note {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  fill: red;
+}
+
+svg rect.border {
+  fill: white;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+svg line {
+  stroke: red;
+  stroke-width: 1px;
+  stroke-dasharray: 1 1;
+}
+
+svg polygon {
+  fill: red;
+}
+
+svg tspan.highlight {
+  font-weight: bold;
+}
+
+svg div {
+  padding-bottom: 10px;
+}

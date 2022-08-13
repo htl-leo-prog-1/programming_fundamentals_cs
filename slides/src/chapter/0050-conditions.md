@@ -35,6 +35,21 @@ else
 <!-- .element: class="fragment" -->
 
 
+## Flowchart
+
+<div class="mermaid">
+  <pre>
+    flowchart TD
+      Start([Start]) --> Random[Get random number]
+      Random --> GreaterThree{Is number > 3?}
+      GreaterThree -- yes --> Low[/Print: You had a 1, 2, or 3./]
+      GreaterThree -- no --> High[/Print: You had a 4, 5, or 6./]
+      Low --> Stop([End])
+      High --> Stop
+  </pre>
+</div>
+
+
 ## What is [`Random.Shared.Next`](https://docs.microsoft.com/en-us/dotnet/api/system.random.next#system-random-next(system-int32-system-int32))?
 
 * Another <!-- .element: class="fragment" --> function from .NET
@@ -43,6 +58,21 @@ else
   * Similar to rolling a dice in a board game
   * You can specify the lower bounds (inclusive) and the upper bounds (exclusive)
 * Pro <!-- .element: class="fragment" --> tip: Use [`Random.Shared.NextDouble`](https://docs.microsoft.com/en-us/dotnet/api/system.random.nextdouble) to get a random floating point number
+
+
+## Example: Number Analyzer
+
+<div class="mermaid">
+  <pre>
+    flowchart TD
+      Start([Start]) --> Input[/Ask user for a number/]
+      Input --> EvenCheck{number % 2 == 0?}
+      EvenCheck -- yes --> Even[/Print: Even/]
+      EvenCheck -- no --> Odd[/Print: Odd/]
+      Even --> Stop([End])
+      Odd --> Stop
+  </pre>
+</div>
 
 
 ## Example: Number Analyzer
