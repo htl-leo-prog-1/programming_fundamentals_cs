@@ -5,11 +5,13 @@
 
 ## What is a Function?
 
-> Assign <!-- .element: class="fragment" --> a name to a code block
+> Assign a name to a code block
+<!-- .element: class="fragment" -->
 
 * Particularly <!-- .element: class="fragment" --> important if you need the block multiple times
   * Can you remember: Don't repeat yourself (DRY)
 * Call <!-- .element: class="fragment" --> the code blick using the assigned name
+* Other <!-- .element: class="fragment" --> names for functions are *methods* and *procedures*
 
 
 ## What is a Function?
@@ -36,13 +38,120 @@ SayHello();
 
 ## What is `void`?
 
-* Function returned **void**
-* `void` means that the function does not return anything
+* Function <!-- .element: class="fragment" --> returned **void**
+  * `void SayHello() { ... }`
+* Means <!-- .element: class="fragment" --> that the function **does not return anything**
   * It has no return type
-* You will see functions returning values shortly
+* You <!-- .element: class="fragment" --> will shortly see functions returning something useful
 
 
-## SVG
+## Function With Return Value
+
+```cs[|1-5|5-19|10-12|21-23]
+  ┌────────────────────────── Return type of the function
+  │
+┌─▼──────────────┐◄────────── Function SIGNATURE
+│bool IsSunday() │
+├────────────────┴──────────────────────────────────────┐◄── Function BODY
+│{                                                      │
+│    // Check if today is a Sunday                      │
+│    if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)  │
+│    {                                                  │
+│       ┌────────────────┐◄── End function execution, specify RETURN VALUE
+│       │return true;    │                              │
+│       └────────────────┘                              │
+│    }                                                  │
+│    else                                               │
+│    {                                                  │
+│        return false;                                  │
+│    }                                                  │
+│}                                                      │
+└───────────────────────────────────────────────────────┘
+ 
+┌────────────────┐◄────────── Call function and PROCESS RETURN VALUE
+│if (IsSunday()) │
+└────────────────┘
+ {
+     Console.WriteLine("Sunday, funday, better than a monday!");
+ }
+```
+
+
+## What is `DateTime`?
+
+* It <!-- .element: class="fragment" --> is a **Structure** provided by .NET
+  * We will learn a lot more about structures later
+* Its <!-- .element: class="fragment" --> full name is `System.DateTime`
+* Represents <!-- .element: class="fragment" --> a point in time (i.e. date + time of day)
+  * Provides useful methods for working with points in time
+* Examples <!-- .element: class="fragment" -->:
+  * Get the current date + time with `DateTime.Now`
+  * Get the current date (with time 00:00:00) with `DateTime.Today`
+
+
+## Function With Return Value
+
+The <!-- .element: class="fragment" --> following code...
+
+```cs
+bool IsSunday()
+{
+    if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+```
+<!-- .element: class="fragment" -->
+
+can <!-- .element: class="fragment" --> be written shorter:
+
+```cs
+bool IsSunday()
+{
+    return DateTime.Today.DayOfWeek == DayOfWeek.Sunday;
+}
+```
+<!-- .element: class="fragment" -->
+
+
+## Function With Parameter
+
+```cs[|1-5|13-14]
+                                ┌───────────────────────────────────── Function parameter
+                                │
+┌───────────────────────────────▼────────────┐
+│double CalculateAreaOfCircle(double radius) │
+└────────────────────────────────────────────┘
+ {
+    return Math.PI * radius * radius;
+ }
+
+ Console.Write("Please enter radius: ");
+ double radius = double.Parse(Console.ReadLine()!);
+                                   ┌─────────────────────────────┐◄─── Call function and PROCESS RETURN VALUE
+ Console.WriteLine($"Circle area: {│CalculateAreaOfCircle(radius)│}");
+                                   └─────────────────────────────┘
+```
+
+
+## Functions With Parameters
+
+* A <!-- .element: class="fragment" --> function can have 0..n parameters
+* The <!-- .element: class="fragment" --> parameter is like a local variable inside the function's code block
+  * Remember what we leared about code blocks and **<span translate="no">&nbsp;scope&nbsp;</span>** of variables?
+  * The <span translate="no">&nbsp;scope&nbsp;</span> of the parameter is the function's body
+* By <!-- .element: class="fragment" --> default, parameters of basic data types (e.g. integer, floating point numbers, boolean) are **copied**
+  * The function cannot change variables of the caller
+  * This is called **call by value**
+  * There is also *call by reference*, which we will learn more about later
+
+
+## Function With Parameter
 
 <svg style="height: 325px; width: 850px;">
   <defs>
