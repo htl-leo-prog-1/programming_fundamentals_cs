@@ -1,6 +1,6 @@
 # Loops
 
-![Hypnothic](https://64.media.tumblr.com/5f507b2deaa1fedf531636ed8cd95dfa/61d92977df3924b4-59/s500x750/274e24800946c366e6b934f3abfdca5516d6f205.gifv)
+![Hypnotic](https://64.media.tumblr.com/5f507b2deaa1fedf531636ed8cd95dfa/61d92977df3924b4-59/s500x750/274e24800946c366e6b934f3abfdca5516d6f205.gifv)
 
 
 ## Types of Loops
@@ -67,7 +67,7 @@ Console.WriteLine("Thank you and good night");
     `0 1 1 2 3 5 8 13 21 34`
 
 
-## Tip: [WolframAlpha]
+## Tip: [WolframAlpha](https://www.wolframalpha.com/)
 
 > [WolframAlpha](https://www.wolframalpha.com/) is a great website for math
 

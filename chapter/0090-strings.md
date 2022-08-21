@@ -131,12 +131,12 @@ else
 ## Example For Strings
 
 * Run the program with the following inputs
-  * `The quick brown fox jumps over the lazy dog`
-  * `Hello Bob`
-  * `Hello Rainer!!`
-  * `Hello RAINER!!`
-  * `Hello Rainer and welcome, Rainer!!`
-  * `   Hello Rainer!!   `
+  * *The quick brown fox jumps over the lazy dog*
+  * *Hello Bob*
+  * *Hello Rainer!!*
+  * *Hello RAINER!!*
+  * *Hello Rainer and welcome, Rainer!!*
+  * *&nbsp;&nbsp;Hello Rainer!!&nbsp;&nbsp;*
   * Empty string
 * Try to understand why the output is as it is
 
