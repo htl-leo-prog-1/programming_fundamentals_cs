@@ -48,6 +48,37 @@ Console.WriteLine("Thank you and good night");
 ```
 
 
+## Exercise: `while` and `do..while` Loops
+
+* Write <!-- .element: class="fragment" --> a program that generates the following outputs using loops
+  * Solve each problem two times, first with a `while` and then with a `do..while` loop
+* Level <!-- .element: class="fragment" --> 1 (relatively easy):
+  * All numbers between 1 and 10:<br/>
+  * `1 2 3 4 5 6 7 8 9 10`
+  * All numbers between 1 and 10 times 2:<br/>
+    `2 4 6 8 10 12 14 16 18 20`
+* Level <!-- .element: class="fragment" --> 2 (a bit harder):
+  * All numbers between 1 and 20 that can be divided by 3 without a remainder:<br/>
+    `0 3 6 9 12 15 18`
+  * Sum of all numbers between 1 and 20 that can be divided by 3 without a remainder:<br/>
+    `63`
+* Level <!-- .element: class="fragment" --> 3 (can you make it?):
+  * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) up to 34:<br/>
+    `0 1 1 2 3 5 8 13 21 34`
+
+
+## Tip: [WolframAlpha]
+
+> [WolframAlpha](https://www.wolframalpha.com/) is a great website for math
+
+* Enter <!-- .element: class="fragment" --> the following texts in WolframAlpha and see what you get
+  * *1024 % 3*
+  * *0 3 6 9 12 15 18*
+  * *Fibonacci sequence*
+  * *plot y = x ^ 2*  (note: `^` means *to the power of*)
+  * *y = -3x + 21*
+
+
 ## Before, After - Does it Matter?
 
 ![Whatever](https://i.pinimg.com/originals/90/ed/c9/90edc9255ad708e15e88586eb7703007.gif)
@@ -152,6 +183,24 @@ for (int n = 0; n < 3; n++)
 6. Is <!-- .element: class="fragment" -->*n < 3*? Yes. So print value of *n* on the screen.
 7. Increment <!-- .element: class="fragment" --> *n*, *n* is now *3*.
 8. Is <!-- .element: class="fragment" --> *n < 3*? **No**. So end program.
+
+
+## Exercise: `for` Loop
+
+* Write <!-- .element: class="fragment" --> a program that generates the following outputs using `for`-loops
+* Level <!-- .element: class="fragment" --> 1 (relatively easy):
+  * All numbers between 1 and 10:<br/>
+  * `1 2 3 4 5 6 7 8 9 10`
+  * All numbers between 1 and 10 times 2:<br/>
+    `2 4 6 8 10 12 14 16 18 20`
+* Level <!-- .element: class="fragment" --> 2 (a bit harder):
+  * All numbers between 1 and 20 that can be divided by 3 without a remainder:<br/>
+    `0 3 6 9 12 15 18`
+  * Sum of all numbers between 1 and 20 that can be divided by 3 without a remainder:<br/>
+    `63`
+* Level <!-- .element: class="fragment" --> 3 (can you make it?):
+  * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) up to 34:<br/>
+    `0 1 1 2 3 5 8 13 21 34`
 
 
 ## Exercise: Number Guessing Game 🎲
@@ -346,7 +395,7 @@ Console.CursorVisible = true;
 ```
 
 
-### What We Have Learned
+### Exercise: What We Have Learned
 
 * Hide/show <!-- .element: class="fragment" --> cursor with `Console.CursorVisible`
 * Put <!-- .element: class="fragment" --> process to sleep with `Thread.Sleep`
