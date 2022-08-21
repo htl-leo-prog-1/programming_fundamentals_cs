@@ -35,9 +35,9 @@ Can <!-- .element: class="fragment" --> be written shorter (no need for variable
 
 * A <!-- .element: class="fragment" --> method can have 0..n parameters
 * The <!-- .element: class="fragment" --> parameter is like a local variable inside the method's code block
-  * Remember what we leared about code blocks and **<span translate="no">&nbsp;scope&nbsp;</span>** of variables?
+  * Remember what we learned about code blocks and **<span translate="no">&nbsp;scope&nbsp;</span>** of variables?
   * The <span translate="no">&nbsp;scope&nbsp;</span> of the parameter is the method's body
-* By <!-- .element: class="fragment" --> default, parameters of basic data types (e.g. integer, floating point numbers, boolean) are **copied**
+* By <!-- .element: class="fragment" --> default, parameters of basic data types (e.g. integer, floating point numbers, bool) are **copied**
   * Changing parameter values does **not** change variables of the caller
   * This is called **call by value**
   * There is also *call by reference*, which we will learn more about later
@@ -232,3 +232,51 @@ int Double(int value) => value * 2;
 | -10     | -20     | -30     | -30                 | -10                 |
 | 5       | -1      | 10      | -1                  | 10                  |
 | 42      | 42      | 42      | 42                  | 42                  |
+
+
+## Exercise: *Fizz Buzz*
+
+* Print all numbers between 1 and 30 on the screen
+  * Replace every number divisible by three with the word *fizz*
+  * Replace every number divisible by five with the word *buzz*
+  * Replace every number divisible by three *and* five with *fizz buzz*
+  * Separate elements with commas
+* Required output:<br/>
+  `1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz`
+
+
+## Tip: [rosettacode.org](https://rosettacode.org/)
+
+* The <!-- .element: class="fragment" --> website [rosettacode.org](https://rosettacode.org/) contains sample code for a large number of coding problems
+  * See [*Explore*-section](http://rosettacode.org/wiki/Category:Programming_Tasks)
+* You <!-- .element: class="fragment" --> can find solutions in *many different programming languages*
+  * Example: [Fizz Buzz](https://rosettacode.org/wiki/FizzBuzz)
+
+
+## Exercise: Rectangle
+
+* Write a method that draws a rectangle on the screen
+* The method gets the following parameters:
+  * `x`: X coordinate of the upper left corner
+  * `y`: Y coordinate of the upper left corner
+  * `width`: Width of the rectangle
+  * `height`: Height of the rectangle
+  * `strokeCharacter`: Character that should be used to draw rectangle (e.g. `*`)
+* Tip: Use the functions for cursor positioning and screen output that we already learned
+  * E.g. `Console.SetCursorPosition`, `Console.Write`, `Console.Clear`
+  * Try `'\u2588'` as the stroke character and see what's going to happen
+
+
+## Exercise: Advanced Rectangle
+
+Call the rectangle method in a loop to create the following pattern:
+
+```txt
+██████████  ██████████  ██████████  ██████████  ██████████
+█        █  █        █  █        █  █        █  █        █
+█     ██████████  ██████████  ██████████  ██████████  ██████████
+█     █  █  █  █  █  █  █  █  █  █  █  █  █  █  █  █  █  █     █
+██████████  ██████████  ██████████  ██████████  ██████████     █
+      █        █  █        █  █        █  █        █  █        █
+      ██████████  ██████████  ██████████  ██████████  ██████████
+```
