@@ -9,7 +9,7 @@
   * Technically: A *collection of characters* (`char`)
 * In <!-- .element: class="fragment" --> C#, Strings use [Unicode](https://home.unicode.org/)
   * Covers all the characters for all the writing systems of the world
-  * Characters for symbols like [Domino Tiles](https://en.wikipedia.org/wiki/Domino_Tiles), Emojis, etc.
+  * Characters for symbols like [Domino Tiles](https://en.wikipedia.org/wiki/Domino_Tiles), [Music Symbols](https://unicode-table.com/en/blocks/musical-symbols/), Emojis, etc.
 * Each <!-- .element: class="fragment" --> character between two and four bytes
   * See also [list of Unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
 
@@ -141,12 +141,27 @@ else
 * Try to understand why the output is as it is
 
 
+## Accessing Strings Character By Character
+
+> You can access the character at index n using `myString[n]`
+
+```cs[|6]
+const string myName = "Rainer";
+
+// Print each letter of my name in a separate line
+for (int i = 0; i < myName.Length; i++)
+{
+  Console.WriteLine(myName[i]);
+}
+```
+
+
 ## ⚠️ Strings Are Read-Only in C#
 
 * In <!-- .element: class="fragment" --> C#, strings **cannot be changed** after you built them
 * If <!-- .element: class="fragment" --> you change it, you get a **changed copy** of the original string
 
-```cs[|3-5|7-9]
+```cs[|3-5|7-9|11-12]
 string name = "Rainer";
 
 // Note that the next line DOES NOT CHANGE the content 
@@ -156,5 +171,45 @@ name.ToLower();
 // The next line works because the NEW STRING is assigned
 // to the variable name.
 name = name.ToLower();
+
+// The following line does not work because it would alter the string
+// name[0] = 'X';
+```
+<!-- .element: class="fragment" -->
+
+
+## [Escape Sequences For Special Characters](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#string-escape-sequences)
+
+| Sequence | Meaning                           |
+|----------|-----------------------------------|
+| `\n`     | Newline, move cursor to next line |
+| `\t`     | Tabulator                         |
+| `\\`     | Backslash                         |
+| `\"`     | Double quotes                     |
+| `\'`     | Single quotes                     |
+
+```cs
+Console.WriteLine("Line1\nLine2"); // Two lines because of \n
+Console.WriteLine("\tIndented text"); // Text indentation because of \t
+Console.WriteLine("C:\\temp\\myfile.txt"); // A sample file name with backslashes in it
+Console.WriteLine("This is \"great\" news"); // A text with double quotes
+Console.WriteLine("What do you mean by \'funny\'?"); // A text with single quotes
+```
+<!-- .element: class="fragment" -->
+
+
+## Exercise: Word Counter - Level 1
+
+* Let <!-- .element: class="fragment" --> the user enter a sentence
+* Count <!-- .element: class="fragment" --> the number of words in the sentence
+  * Words are separated by a single space character
+* Print <!-- .element: class="fragment" --> the number of words on the screen
+
+This <!-- .element: class="fragment" --> is a sample output/input:
+
+```txt
+Please enter a sentence:
+The HTL-Leonding is great! I love going to school there.
+Your sentence has 10 words.
 ```
 <!-- .element: class="fragment" -->
