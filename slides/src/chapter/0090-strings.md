@@ -10,7 +10,7 @@
 * In <!-- .element: class="fragment" --> C#, Strings use [Unicode](https://home.unicode.org/)
   * Covers all the characters for all the writing systems of the world
   * Characters for symbols like [Domino Tiles](https://en.wikipedia.org/wiki/Domino_Tiles), [Music Symbols](https://unicode-table.com/en/blocks/musical-symbols/), Emojis, etc.
-* Each <!-- .element: class="fragment" --> character between two and four bytes
+* Each <!-- .element: class="fragment" --> character is between two and four bytes long
   * See also [list of Unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
 
 
@@ -33,7 +33,7 @@ string helloInDifferentLanguages;
 helloInDifferentLanguages = "Hallo";
 Console.WriteLine(helloInDifferentLanguages);
 helloInDifferentLanguages = "hi";
-Console.WriteLine(helloInDiffe<rentLanguages);
+Console.WriteLine(helloInDifferentLanguages);
 helloInDifferentLanguages = "bonjour";
 Console.WriteLine(helloInDifferentLanguages);
 
@@ -145,13 +145,14 @@ else
 
 > You can access the character at index n using `myString[n]`
 
-```cs[|6]
+```cs[|6-7]
 const string myName = "Rainer";
 
 // Print each letter of my name in a separate line
 for (int i = 0; i < myName.Length; i++)
 {
-  Console.WriteLine(myName[i]);
+  char currentChar = myName[i];
+  Console.WriteLine(currentChar);
 }
 ```
 
@@ -198,7 +199,26 @@ Console.WriteLine("What do you mean by \'funny\'?"); // A text with single quote
 <!-- .element: class="fragment" -->
 
 
-## Exercise: Word Counter - Level 1
+## [`ToString()`](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)
+
+> With `.ToString()`, you can turn every data type in C# in its string representation
+
+```cs[|1-3|5-7|9-10]
+// Turn a constant into a string
+const int someNumber = 42;
+string someNumberAsString = someNumber.ToString();
+
+// Turn a variable into a string
+int anotherNumber = 40 + 2;
+string anotherNumberAsString = anotherNumber.ToString();
+
+// Turn a literal into a string
+string literalAsString = 42.ToString();
+```
+<!-- .element: class="fragment" -->
+
+
+## Exercise: Word Counter
 
 * Let <!-- .element: class="fragment" --> the user enter a sentence
 * Count <!-- .element: class="fragment" --> the number of words in the sentence
@@ -213,3 +233,20 @@ The HTL-Leonding is great! I love going to school there.
 Your sentence has 10 words.
 ```
 <!-- .element: class="fragment" -->
+
+
+## Exercise: *Fizz Buzz* - Level 2
+
+* Can <!-- .element: class="fragment" --> you remember *Fizz Buzz*?
+  * Let's do it again, but in an enhanced form
+* Print <!-- .element: class="fragment" --> all numbers **between 1 and 35** on the screen
+  * Replace every number divisible by 3 or **that contains the digit 3** with the word *fizz*
+  * Replace every number divisible by 5 or **that contains the digit 5** with the word *buzz*
+  * Replace every number divisible by 3 *and* five or **that contains the digits 3 and 5** with *fizz buzz*
+  * Separate elements with commas
+* Put <!-- .element: class="fragment" -->the logic for turning each number in a string in a separate function<br/>
+  `string ToFizzBuzzLevel2(int number) { ... }`
+* Put <!-- .element: class="fragment" -->the logic for checking if string contains a digit in a separate function<br/>
+  `bool ContainsDigit(int digit) { ... }`
+* Required <!-- .element: class="fragment" --> output:<br/>
+  `1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, Fizz, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, Fizz, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, Fizz, Fizz, Fizz, Fizz, Fizz Buzz`
