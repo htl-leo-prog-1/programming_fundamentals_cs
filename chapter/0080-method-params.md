@@ -241,7 +241,7 @@ int Double(int value) => value * 2;
   * Replace every number divisible by five with the word *buzz*
   * Replace every number divisible by three *and* five with *fizz buzz*
   * Separate elements with commas
-* Put <!-- .element: class="fragment" -->the logic for turning each number in a string in a separate functions<br/>
+* Put <!-- .element: class="fragment" -->the logic for turning each number in a string in a separate function<br/>
   `string ToFizzBuzz(int number) { ... }`
 * Required <!-- .element: class="fragment" --> output:<br/>
   `1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz`
@@ -254,10 +254,11 @@ int Double(int value) => value * 2;
     flowchart TD
       Start([ToFizzBuzz]) --> Fizz[fizz = number % 3\n]
       Fizz --> Buzz[buzz = number % 5]
-      Buzz --> CompareFizzBuzz{fizz && buzz}
+      Buzz --> Continue1((1))
+      Continue2((1)) --> CompareFizzBuzz{fizz && buzz}
       CompareFizzBuzz -- true --> ReturnFizzBuzz[return fizz buzz]
-      CompareFizzBuzz -- false --> Continue1((1))
-      Continue2((1)) --> CompareFizz{fizz}
+      CompareFizzBuzz -- false --> Continue3((2))
+      Continue4((1)) --> CompareFizz{fizz}
       CompareFizz -- true --> ReturnFizz[return fizz]
       CompareFizz -- false --> CompareBuzz{buzz}
       CompareBuzz -- true --> ReturnBuzz[return buzz]
