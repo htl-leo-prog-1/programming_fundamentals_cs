@@ -76,6 +76,13 @@ svg rect.border {
   stroke-width: 1px;
 }
 
+svg rect.highlight {
+  fill: transparent;
+  stroke: red;
+  stroke-width: 1px;
+  stroke-dasharray: 1 1;
+}
+
 svg line {
   stroke: red;
   stroke-width: 1px;

@@ -141,6 +141,23 @@ else
 * Try to understand why the output is as it is
 
 
+## Instance Methods
+
+* In <!-- .element: class="fragment" --> previous chapters, we wrote standalone methods
+  * They got the input they needed through parameters
+  * They returned the result through return values
+  * E.g. `int higherValue = Max(10, 20);`
+* The <!-- .element: class="fragment" --> *string*-methods mentioned above are different
+  * You need an instance of a string to call them: `myString.ToLower()`
+  * They are "bound" to the *string*-object
+  * They operate on the *string*-object
+
+> Methods bound to an instance of an object are called **instance methods**
+<!-- .element: class="fragment" -->
+
+You <!-- .element: class="fragment" --> will learn more about instance methods - including how<br/>to create your own ones - later when we talk about classes and structures
+
+
 ## Accessing Strings Character By Character
 
 > You can access the character at index n using `myString[n]`
@@ -264,3 +281,20 @@ Your sentence has 10 words.
 * Use <!-- .element: class="fragment" --> <span translate="no">**verbatim string literals**</span> in such cases
   * Marked with `@` before the string
   * E.g. `@"C:\temp\myfolder\myfile.txt"`
+* Verbatim <!-- .element: class="fragment" --> strings can also span multiple lines
+
+```cs[]
+string textOfFamousChildSong = @"Baby Shark, doo-doo, doo-doo-doo-doo
+Baby Shark, doo-doo, doo-doo-doo-doo
+Baby Shark, doo-doo, doo-doo-doo-doo
+Baby Shark
+
+Mommy Shark, doo-doo, doo-doo-doo-doo
+Mommy Shark, doo-doo, doo-doo-doo-doo
+Mommy Shark, doo-doo, doo-doo-doo-doo
+Mommy Shark
+
+...";
+// Source: https://youtu.be/XqZsoesa55w
+```
+<!-- .element: class="fragment" -->
