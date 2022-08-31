@@ -159,7 +159,7 @@ Console.Write(name);
 * Not <!-- .element: class="fragment" --> all operators make sense for all types. Examples:
   * `+` for integer values 👍 - obviously works
   * `/` for string values 🤔 - makes no sense
-  * `>` for boolean values 🤔 - also makes no sense
+  * `>` for Boolean values 🤔 - also makes no sense
 
 
 ## Examples: Increment, Decrement
@@ -301,8 +301,8 @@ Console.WriteLine("The next number is " + number);
 * <span translate="no">&nbsp;Expressions&nbsp;</span> from previous examples:
   * `length * width` - result is a number
   * `number % 2` - result is a number
-  * `remainder == 0` - result is a boolean value (`true` or `false`)
-  * `number > 5` - result is a boolean value (`true` or `false`)
+  * `remainder == 0` - result is a Boolean value (`true` or `false`)
+  * `number > 5` - result is a Boolean value (`true` or `false`)
   * `"The next number is " + number` - result is a string
 * As you can see, <span translate="no">&nbsp;expressions&nbsp;</span> do *not* end with a semicolon
 * <span translate="no">&nbsp;Expressions&nbsp;</span> will become very important in more advanced code examples
@@ -315,6 +315,7 @@ Console.WriteLine("The next number is " + number);
 * Use <!-- .element: class="fragment" --> `0b` prefix to specify a numeric literal in binary format
   * E.g. `0b1000` = `8`
 * Use <!-- .element: class="fragment" --> `_` for digit grouping
+  * Useful if you have large values (e.g. `80_000_000`)
   * E.g. `1_000_000`
 * Find <!-- .element: class="fragment" --> out [more](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types)
 
