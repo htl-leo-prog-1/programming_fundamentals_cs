@@ -216,14 +216,23 @@ for (var i = 0; i < words.Length; i++)
 * Split <!-- .element: class="fragment" --> the data into lines
   * Use `co2Data.Split('\n')`
   * ⚠️ Consider end of line sequence of *.cs* file
-* Split <!-- .element: class="fragment" --> each line into year and CO² emission
-  * Use `line.Split(',')`
-* Convert <!-- .element: class="fragment" --> second array element into number
-  * ⚠️ Don't use `int` for emissions as they are high numbers, use `long` instead ([read more](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
-  * Use `long.Parse(data[1])`
-* For <!-- .element: class="fragment" --> each year, print the year, the CO² emission as a number and a bar indicating the emission
-  * For 80 million tons, the bar should have a length of 40 characters
-  * Calculate length of bar for each CO² emission value: `long barLength = co2 * 40 / 80_000_000;`
+* For <!-- .element: class="fragment" --> each line:
+  * Create <!-- .element: class="fragment" --> a separate method for processing each line
+  * Split <!-- .element: class="fragment" --> each line into year and CO² emission
+    * Use `line.Split(',')`
+  * Convert <!-- .element: class="fragment" --> second array element into number
+    * ⚠️ Don't use `int` for emissions as they are high numbers, use `long` instead ([read more](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+    * Use `long.Parse(data[1])`
+  * Print <!-- .element: class="fragment" --> the year, the CO² emission as a number and a bar indicating the emission
+    * For 80 million tons, the bar should have a length of 40 characters
+    * Calculate length of bar for each CO² emission value: `long barLength = co2 * 40 / 80_000_000;`
+    * 🔥 Tip: Generate a string with a repeated character: `string bar = new string('#', barLength);`
+
+
+## Example: CO² Chart
+
+[![](https://mermaid.ink/img/pako:eNp1U1Fv2jAQ_isn7wWmtEDoKEXaJo32jbaTmDRtCZqMc0msOXbkODCE-O87GwJs2h4Sn----77z-bxnwmTIZixXZitKbh18eUw1wNKR3UvCsurDzc0HWNZKuiT8oXFW6gK20pWQccfTVEvtDHBr-e7oVlJjswpcIcVTLHjjFuSflyh--tAfjv2LgcpYPKZ-PFAK7LAJmU86e80XxtS9HplgLCnW1hSWV_3-f5kIdMWlTaD6bI3ApvHgJDltguQqVHsVDvAX_BWIk2ezQaAzanIc8R7ehf99viuyZ3Tl33qXvgaFY6N8CHw3qfodcgucDjx_jS-9POvNjd6gdclp9ajuJnRbrdGGnC7qMz5xu0BdUClzrkSruENYk4YKTkpedwB4D8LE8BbuhjCA6fDHcBi-QHmmOXWUJL9RqclXK4nQm5EvJiJCX_0b8LPFhUMLFwEnq9OEnAkud-3bFe6632cRq9BWXGY0qHuPT5krscKUzcjM6aIbl7LoFAkbHyhRKQNbY1WWslQfiKetaVrxKZPOWDZztsWI8daZ5U6Lbn_EPEruh6tzKsMzpJQ9c7vaP5hCNo4IhdG5LLy_tYrcpXN1MxsMfPi2oHfQrm-FqQaNzPzrKjcPk8Eknkx5PMbJ_Zi_G48zsR49TPP4bpRn98NRzNnhELGa6-_GkH7OVYOH34ZePjU)](https://mermaid.live/edit#pako:eNp1U1Fv2jAQ_isn7wWmtEDoKEXaJo32jbaTmDRtCZqMc0msOXbkODCE-O87GwJs2h4Sn----77z-bxnwmTIZixXZitKbh18eUw1wNKR3UvCsurDzc0HWNZKuiT8oXFW6gK20pWQccfTVEvtDHBr-e7oVlJjswpcIcVTLHjjFuSflyh--tAfjv2LgcpYPKZ-PFAK7LAJmU86e80XxtS9HplgLCnW1hSWV_3-f5kIdMWlTaD6bI3ApvHgJDltguQqVHsVDvAX_BWIk2ezQaAzanIc8R7ehf99viuyZ3Tl33qXvgaFY6N8CHw3qfodcgucDjx_jS-9POvNjd6gdclp9ajuJnRbrdGGnC7qMz5xu0BdUClzrkSruENYk4YKTkpedwB4D8LE8BbuhjCA6fDHcBi-QHmmOXWUJL9RqclXK4nQm5EvJiJCX_0b8LPFhUMLFwEnq9OEnAkud-3bFe6632cRq9BWXGY0qHuPT5krscKUzcjM6aIbl7LoFAkbHyhRKQNbY1WWslQfiKetaVrxKZPOWDZztsWI8daZ5U6Lbn_EPEruh6tzKsMzpJQ9c7vaP5hCNo4IhdG5LLy_tYrcpXN1MxsMfPi2oHfQrm-FqQaNzPzrKjcPk8Eknkx5PMbJ_Zi_G48zsR49TPP4bpRn98NRzNnhELGa6-_GkH7OVYOH34ZePjU)
+
 
 
 ## Data For CO² Chart

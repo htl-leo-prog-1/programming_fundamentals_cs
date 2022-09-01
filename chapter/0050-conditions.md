@@ -37,17 +37,7 @@ else
 
 ## Flowchart
 
-<div class="mermaid">
-  <pre>
-    flowchart TD
-      Start([Start]) --> Random[Get random number]
-      Random --> GreaterThree{Is number > 3?}
-      GreaterThree -- yes --> Low[/Print: You had a 1, 2, or 3./]
-      GreaterThree -- no --> High[/Print: You had a 4, 5, or 6./]
-      Low --> Stop([End])
-      High --> Stop
-  </pre>
-</div>
+[![](https://mermaid.ink/img/pako:eNptkTFPwzAQhf_KyVMrpQ1NaIAMZQEBEgOiLJB0cONLbCnxRY5DVUX579ihrRiYfH7vfeeTb2AFCWQpK2s6FJIbCx8PuQbYWlfPsunYzWGx2MA714Ka7AktmKkE3Td7NDuf_zWn3JNBbtF8SIM4vHSnFGwgvh999K_vADhiN3GvdMjCN6O0TeGTepBcAIdVAFEAZCBehrv_cE0T_awq-Q9-HcB6wpMT7l6Z8ltL7Sx71GI397LHLzoLWIOm4Uq4nxm8nTMrscGcpa4syWBncxacnOniDYl1TXAgU4uc5Xp0ffpWuGkfhbJkWFryusOA8d7S9qgLllrT4zn0oHhleHNJ1cQFOmhg9tj6HVWqs65lQbpUldd7UztZWtt2aRh6e1kpK_v9sqAm7JTwC5Xfd0mYRMktj2JMbmK-jmNR7Fd3t2V0vSrFzdUq4mwcA9Zy_UV0HmD8AZUPrjQ)](https://mermaid.live/edit#pako:eNptkTFPwzAQhf_KyVMrpQ1NaIAMZQEBEgOiLJB0cONLbCnxRY5DVUX579ihrRiYfH7vfeeTb2AFCWQpK2s6FJIbCx8PuQbYWlfPsunYzWGx2MA714Ka7AktmKkE3Td7NDuf_zWn3JNBbtF8SIM4vHSnFGwgvh999K_vADhiN3GvdMjCN6O0TeGTepBcAIdVAFEAZCBehrv_cE0T_awq-Q9-HcB6wpMT7l6Z8ltL7Sx71GI397LHLzoLWIOm4Uq4nxm8nTMrscGcpa4syWBncxacnOniDYl1TXAgU4uc5Xp0ffpWuGkfhbJkWFryusOA8d7S9qgLllrT4zn0oHhleHNJ1cQFOmhg9tj6HVWqs65lQbpUldd7UztZWtt2aRh6e1kpK_v9sqAm7JTwC5Xfd0mYRMktj2JMbmK-jmNR7Fd3t2V0vSrFzdUq4mwcA9Zy_UV0HmD8AZUPrjQ)
 
 
 ## What is [`Random.Shared.Next`](https://docs.microsoft.com/en-us/dotnet/api/system.random.next#system-random-next(system-int32-system-int32))?
@@ -62,17 +52,7 @@ else
 
 ## Example: Number Analyzer
 
-<div class="mermaid">
-  <pre>
-    flowchart TD
-      Start([Start]) --> Input[/Ask user for a number/]
-      Input --> EvenCheck{number % 2 == 0?}
-      EvenCheck -- yes --> Even[/Print: Even/]
-      EvenCheck -- no --> Odd[/Print: Odd/]
-      Even --> Stop([End])
-      Odd --> Stop
-  </pre>
-</div>
+[![](https://mermaid.ink/img/pako:eNpVkV9rwjAUxb9KCAwUqtW6VS24MaYPe9rAPa31ITa3f7BNSnKjSOl3X1Jnx55y7zm_e8hNWppKDjSiWSUvacEUkq9tIgjZo61HcX8cxmQyeSbvojEY-6_6RIwGRTKpCCPC1EdQ_sEN9UTP7s4g3gpIT-3NJw8kIJsNmb10DhxsC5Mr6GEm9j9VKTDqm1voP1bIHv3gfCBt_Qf27h5lM4p3gh_GTrfAIFOP1qBqVnK7c-vchGIBNSQ0sqVdCTQm1Pt1-sYZBVSVJBepKp7QRHQ2xzScIex4iVLRKGOVBo8yg3J_FSmNUBm4Q9uS5YrVA1VJxsEOtRSvjXv9vNRoI1MpsjJ3ulGVlQvERke-7-xpXmJhjtNU1r4uufuq4rwO_TAIVyxYQLhcsKfFgqfH-XqVBY_zjC9n84DRrvNow8S3lPcLdD-oiKJ5)](https://mermaid.live/edit#pako:eNpVkV9rwjAUxb9KCAwUqtW6VS24MaYPe9rAPa31ITa3f7BNSnKjSOl3X1Jnx55y7zm_e8hNWppKDjSiWSUvacEUkq9tIgjZo61HcX8cxmQyeSbvojEY-6_6RIwGRTKpCCPC1EdQ_sEN9UTP7s4g3gpIT-3NJw8kIJsNmb10DhxsC5Mr6GEm9j9VKTDqm1voP1bIHv3gfCBt_Qf27h5lM4p3gh_GTrfAIFOP1qBqVnK7c-vchGIBNSQ0sqVdCTQm1Pt1-sYZBVSVJBepKp7QRHQ2xzScIex4iVLRKGOVBo8yg3J_FSmNUBm4Q9uS5YrVA1VJxsEOtRSvjXv9vNRoI1MpsjJ3ulGVlQvERke-7-xpXmJhjtNU1r4uufuq4rwO_TAIVyxYQLhcsKfFgqfH-XqVBY_zjC9n84DRrvNow8S3lPcLdD-oiKJ5)
 
 
 ## Example: Number Analyzer
