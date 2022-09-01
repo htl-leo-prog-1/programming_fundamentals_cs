@@ -197,16 +197,7 @@ int Double(int value) => value * 2;
 
 ## Exercise: Max
 
-<div class="mermaid">
-  <pre>
-    flowchart TD
-      Start([Max value1, value2]) --> Compare{value1 > value2}
-      Compare -- yes --> V1[return value1]
-      Compare -- no --> V2[return value2]
-      V1 --> Stop([End])
-      V2 --> Stop([End])
-  </pre>
-</div>
+[![](https://mermaid.ink/img/pako:eNpdkT1vwjAQhv-KdRNIoWmcNkAGlsLYiYqhhMHEzofk-CLnAkVR_nudECqVyef3ee7kjw5SlApiyDRe00JYYl_bxDC2J1fPjp_ih12EblXg3Vd-mrPFYsM-sKqFVd0dss1E-6F3Ys5jN9WM-iE4WkWtNdO005Nn8K7xfxoftUMwsj1hPTvujDzNx5Q_p-BBpWwlSunu0w1OAlSoSiUQuzJDqxpKwJvIuBlAobRGdkWrZQKJ6d2ctpaC1E6WhBbiTOhGeSBawv3NpBCTbdVD2pYit6L6szQKqVxTB3Srh5fNy4bcyBRNVuZD3lrt4oKobmLfH_BLXlLRnl9SrPymlMM3FJd15Ec8WgkeqmgZivcwlOk5WK8y_hZkcvkacAF970EtzDfi4wD9L9nxl7g)](https://mermaid.live/edit#pako:eNpdkT1vwjAQhv-KdRNIoWmcNkAGlsLYiYqhhMHEzofk-CLnAkVR_nudECqVyef3ee7kjw5SlApiyDRe00JYYl_bxDC2J1fPjp_ih12EblXg3Vd-mrPFYsM-sKqFVd0dss1E-6F3Ys5jN9WM-iE4WkWtNdO005Nn8K7xfxoftUMwsj1hPTvujDzNx5Q_p-BBpWwlSunu0w1OAlSoSiUQuzJDqxpKwJvIuBlAobRGdkWrZQKJ6d2ctpaC1E6WhBbiTOhGeSBawv3NpBCTbdVD2pYit6L6szQKqVxTB3Srh5fNy4bcyBRNVuZD3lrt4oKobmLfH_BLXlLRnl9SrPymlMM3FJd15Ec8WgkeqmgZivcwlOk5WK8y_hZkcvkacAF970EtzDfi4wD9L9nxl7g)
 
 
 ## Exercise: Min
@@ -249,22 +240,7 @@ int Double(int value) => value * 2;
 
 ## Exercise: *Fizz Buzz*
 
-<div class="mermaid scrollable">
-  <pre>
-    flowchart TD
-      Start([ToFizzBuzz]) --> Fizz[fizz = number % 3\n]
-      Fizz --> Buzz[buzz = number % 5]
-      Buzz --> Continue1((1))
-      Continue2((1)) --> CompareFizzBuzz{fizz && buzz}
-      CompareFizzBuzz -- true --> ReturnFizzBuzz[return fizz buzz]
-      CompareFizzBuzz -- false --> Continue3((2))
-      Continue4((1)) --> CompareFizz{fizz}
-      CompareFizz -- true --> ReturnFizz[return fizz]
-      CompareFizz -- false --> CompareBuzz{buzz}
-      CompareBuzz -- true --> ReturnBuzz[return buzz]
-      CompareBuzz -- false --> ReturnNumber[return number.ToString]
-  </pre>
-</div>
+[![](https://mermaid.ink/img/pako:eNp1Uk1PgzAY_itNExdNtuHAsY1EDzo9enA7CRwKLdAEWlJal0H477admMnchfTt89WntIMpxwQGMCv5IS2QkGC_jRgAO6nXt-Gev9G2fVZtG9-B2ewJmDHM9Ac8AqaqhAhwA7woYrFRGdTSjCJM1F_a0nIMZDkvvKqRIENAZ10nE2BkvWGOCFoEpFDEij-IVIINUCjsCKyF0cdX9BkqGzJOt8njxCtp50nxP5KLAFttXOlKnfMq4xaXDU6ad3u7g-p01_M930lBWR7DKayIqBDF-h93xi6CsiAViWCglxkXpJERnP4gdjBAQcqSgwMXJY5gxHrto2qMJHnFVHIBA3uMKURK8t2RpTAwVQbSlqJcoOqXVXKEiRZ1UB5r89py2khtmXKW0dzsK1Hq7ULKugkcx8DznMpCJfOUV05DsXmaxdfGd3zXXyPXI_7KQ0vPw2my2Kwz92GR4dX9wkWw76ewRuyT8-EA_Tdev_6R)](https://mermaid.live/edit#pako:eNp1Uk1PgzAY_itNExdNtuHAsY1EDzo9enA7CRwKLdAEWlJal0H477admMnchfTt89WntIMpxwQGMCv5IS2QkGC_jRgAO6nXt-Gev9G2fVZtG9-B2ewJmDHM9Ac8AqaqhAhwA7woYrFRGdTSjCJM1F_a0nIMZDkvvKqRIENAZ10nE2BkvWGOCFoEpFDEij-IVIINUCjsCKyF0cdX9BkqGzJOt8njxCtp50nxP5KLAFttXOlKnfMq4xaXDU6ad3u7g-p01_M930lBWR7DKayIqBDF-h93xi6CsiAViWCglxkXpJERnP4gdjBAQcqSgwMXJY5gxHrto2qMJHnFVHIBA3uMKURK8t2RpTAwVQbSlqJcoOqXVXKEiRZ1UB5r89py2khtmXKW0dzsK1Hq7ULKugkcx8DznMpCJfOUV05DsXmaxdfGd3zXXyPXI_7KQ0vPw2my2Kwz92GR4dX9wkWw76ewRuyT8-EA_Tdev_6R)
 
 
 ## Tip: [rosettacode.org](https://rosettacode.org/)

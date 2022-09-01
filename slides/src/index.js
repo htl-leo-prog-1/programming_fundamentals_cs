@@ -4,10 +4,9 @@ import highlight from 'reveal.js/plugin/highlight/highlight';
 import notes from 'reveal.js/plugin/notes/notes';
 import zoom from 'reveal.js/plugin/zoom/zoom';
 import search from 'reveal.js/plugin/search/search';
-import mermaid from 'reveal.js-mermaid-plugin';
 
 let deck = new Reveal({
-  plugins: [markdown, highlight, notes, zoom, search, mermaid]
+  plugins: [markdown, highlight, notes, zoom, search]
 })
 
 deck.initialize({

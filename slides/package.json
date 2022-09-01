@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/htl-leo-prog-1/programming_fundamentals_cs/",
   "dependencies": {
-    "reveal.js": "^4.1.0",
-    "reveal.js-mermaid-plugin": "^0.0.2"
+    "reveal.js": "^4.1.0"
   },
   "devDependencies": {
     "esbuild": "^0.14.14",

@@ -213,22 +213,7 @@ Console.Clear();
 
 ## Area Calculator Flowchart
 
-<div class="mermaid">
-  <pre>
-    flowchart TD
-      Start([Start]) --> Color[Switch to white text\non red background]
-      Color --> Clear[Clear screen]
-      Clear --> Welcome[/Print welcome message/]
-      Welcome --> Length[/Ask for length/]
-      Length --> Width[/Ask for width/]
-      Width --> conn((&nbsp;))
-      conn2((&nbsp;)) --> Area[Calculate area = length * width]
-      Area --> Result[/Print result/]
-      Result --> Wait[Wait for user to press a key]
-      Wait --> ColorReset[Switch back to white text\non black background]
-      ColorReset --> Stop([End])
-  </pre>
-</div>
+[![](https://mermaid.ink/img/pako:eNptUslu2zAQ_RWCp6RwotpunURACwRJbj0UdYEClXIYkyORMEUK5KiqYfjfy8UOesiF4vAtM3rkkQsnkde8M24WCjyxn8-tZWxLcX_V5M_rNbu5-cqenHG-2c6ahGLk2Kw0ISP8S21rnWUeJduB2PfeTVa-JpcsKWKD4Ju8siA8oi2EfJAIv9AIN2BTfffaEptLyQYMAXqsMvvMyfxvaHtSTfUY9qyLTUyuC69gxVbL_1lzKs9maZs5jx6heQIjJgPxjyCW7MvZkH0omixJxKz4gWEydJnV56q4FqS0Bk1NWnLnKaBPqY2RHRiwPR7KGInwFm-UI10yTmG-F_TOJOC9qLM8u23JjVfNSwSv-YIP6AfQMt7zMXFbTgoHbHkdt3E4DNTyxRnJRQIUGhObO29ky1t7ij7TKGNCL1KT87zuwARccJjIbQ9W8Jr8hBfSs4bew_DGMg4kRtGR02FML67XgaKlcLbTfTqfvInHimgMdVUl-LbXpKbdbbz0KmiZnqf687CpNqvNPazWuLlbw-f1Word8uG-W31advLu43IF_HRa8BHsb-cuA5z-AUze_CU)](https://mermaid.live/edit#pako:eNptUslu2zAQ_RWCp6RwotpunURACwRJbj0UdYEClXIYkyORMEUK5KiqYfjfy8UOesiF4vAtM3rkkQsnkde8M24WCjyxn8-tZWxLcX_V5M_rNbu5-cqenHG-2c6ahGLk2Kw0ISP8S21rnWUeJduB2PfeTVa-JpcsKWKD4Ju8siA8oi2EfJAIv9AIN2BTfffaEptLyQYMAXqsMvvMyfxvaHtSTfUY9qyLTUyuC69gxVbL_1lzKs9maZs5jx6heQIjJgPxjyCW7MvZkH0omixJxKz4gWEydJnV56q4FqS0Bk1NWnLnKaBPqY2RHRiwPR7KGInwFm-UI10yTmG-F_TOJOC9qLM8u23JjVfNSwSv-YIP6AfQMt7zMXFbTgoHbHkdt3E4DNTyxRnJRQIUGhObO29ky1t7ij7TKGNCL1KT87zuwARccJjIbQ9W8Jr8hBfSs4bew_DGMg4kRtGR02FML67XgaKlcLbTfTqfvInHimgMdVUl-LbXpKbdbbz0KmiZnqf687CpNqvNPazWuLlbw-f1Word8uG-W31advLu43IF_HRa8BHsb-cuA5z-AUze_CU)
 
 
 ## Area Calculator Flowchart
