@@ -18,7 +18,7 @@ Source: [xkcd.com](https://xkcd.com/), a huge source of funny tech and science c
 
 Go on and [install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview) on your computer.
 
-![Wizard installs software](https://pbs.twimg.com/media/DNJ2KVUUIAAgkld?format=jpg&name=small)
+![Wizard installs software](https://pbs.twimg.com/media/DNJ2KVUUIAAgkld?format=jpg&name=small) <!-- .element height="40%" width="40%" -->
 
 
 ## Recommended Extensions
