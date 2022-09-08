@@ -32,9 +32,11 @@ Go on and [install Visual Studio Code](https://code.visualstudio.com/docs/setup/
   * [C# XML Documentation Comments](https://marketplace.visualstudio.com/items?itemName=k--kato.docomment)
   * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
   * [NuGet Package Manager GUI](https://marketplace.visualstudio.com/items?itemName=aliasadidev.nugetpackagemanagergui)
+  * [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 * Optional <!-- .element: class="fragment" -->
   * [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-  * Choose a [great color theme](https://medium.com/quick-code/the-best-vs-code-themes-2022-9e9b648c4596) yourself
+  * Choose a [great color theme](https://medium.com/quick-code/the-best-vs-code-themes-2022-9e9b648c4596) yourself...
+  * ...or install great themes built by the community (e.g. [Material Theme](https://material-theme.site/))
   * [VSCode Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
   * [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
 * Want <!-- .element: class="fragment" --> more? [Marketplace](https://marketplace.visualstudio.com/vscode)
@@ -51,6 +53,70 @@ Go on and [install Visual Studio Code](https://code.visualstudio.com/docs/setup/
 ![This is your job](https://media.giphy.com/media/Obnxeh737Umpa/giphy.gif)
 
 
-## VSCode Tip #1: Open Folder
+## VSCode Tip #1: Folder Management
 
-* Keep all your 
+* Create <!-- .element: class="fragment" --> **one folder dedicated to each course** on your computers hard disk
+  * E.g. *C:\HTL\PRO* (Windows), */home/youruser/HTL/PRO* (Linux)
+* Create <!-- .element: class="fragment" --> a **subfolder for each exercise**
+  * Consider a numbering schema (e.g. *0010-...*, *0020-...*)
+  * E.g. *C:\HTL\PRO\0010-<span translate="no">&nbsp;statements&nbsp;</span>* (Windows), */home/youruser/HTL/PRO/0010-<span translate="no">&nbsp;statements&nbsp;</span>* (Linux)
+* Whenever <!-- .element: class="fragment" --> you work on an exercise, **open the folder in VSCode**
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+![Open Folder](images/vscode-open-folder.png) <!-- .element height="75%" width="75%" -->
+<!-- .element: class="fragment" -->
+
+</div><div class="col" data-markdown>
+
+![Open Folder from start screen](images/vscode-open-folder-startscreen.png) <!-- .element height="75%" width="75%" -->
+<!-- .element: class="fragment" -->
+
+</div></div>
+
+
+## VSCode Tip #2: Drag-n-Drop From Explorer
+
+You can drag & drop files from/to explorer to/from VSCode
+
+![Drag-and-drop from/to explorer](images/vscode-drag-drop-explorer.gif)
+
+
+## VSCode Tip #3: Remember the Palette
+
+![VSCode Open Palette](images/vscode-open-palette.png)
+
+![VSCode Palette](images/vscode-palette.gif)
+<!-- .element: class="fragment" -->
+
+
+## VSCode Tip #4: Built-in Terminal
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+![VSCode Terminal](images/vscode-terminal.png)
+<!-- .element: class="fragment" -->
+
+* A <!-- .element: class="fragment" --> **terminal** is a command window where you can type in commands
+  * Windows: E.g. *CMD*
+  * Linux: E.g. *bash*
+* Used <!-- .element: class="fragment" --> very frequently during programming with C#
+
+</div><div class="col" data-markdown>
+
+![VSCode New Terminal](images/vscode-new-terminal.gif)
+<!-- .element: class="fragment" -->
+
+</div></div>
+
+
+## VSCode Tip #5: Keyboard Shortcuts ⌨️
+
+> ⚡ They make you so much faster ⚡
+<!-- .element: class="fragment" -->
+
+* Keyboard <!-- .element: class="fragment" --> Shortcut [Poster for Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+* Keyboard <!-- .element: class="fragment" --> Shortcut [Poster for Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-Linux.pdf)
+
+> 🖨️ them, put them beside you,<br/>ignore the 🐭, learn to ❤️ the ⌨️
+<!-- .element: class="fragment" -->
