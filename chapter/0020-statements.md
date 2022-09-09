@@ -71,6 +71,15 @@ Console.Write("*");
 <!-- .element: class="fragment" -->
 
 
+## Why "Console"?
+
+Name comes from *consoles* with<br/>screen and keyboard used in the mid 20th century.
+
+![Console](https://hanselmanblogcontent.azureedge.net/Windows-Live-Writer/23dece647ab5_14733/image_13b2c80d-a2d6-4429-8ca6-f053340897cc.png)
+
+Read [*What's the difference between a console, a terminal, and a shell?*](https://www.hanselman.com/blog/whats-the-difference-between-a-console-a-terminal-and-a-shell)
+
+
 ## What if `Console.WriteLine` Doesn't Work?
 
 * Its <!-- .element: class="fragment" --> full name is `System.Console.WriteLine`
