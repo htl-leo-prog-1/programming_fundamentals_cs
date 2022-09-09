@@ -1,8 +1,26 @@
 # Tools
 
-![Tools xkcd](https://imgs.xkcd.com/comics/tools.png)
+![Tools XKCD](https://imgs.xkcd.com/comics/tools.png)
 
 Source: [xkcd.com](https://xkcd.com/), a huge source of funny tech and science comics
+
+
+## KeePass
+
+> Keep your online identities secure 🔒!
+
+* Use <!-- .element: class="fragment" --> single sign-on wherever possible
+  * Google identity, Microsoft account, GitHub account (more later), etc.
+* Use <!-- .element: class="fragment" --> **Multi-Factor-Authentication** (MFA) wherever possible
+  * SMS, fingerprint, face, etc.
+* Store <!-- .element: class="fragment" --> all your passwords and other secrets in a **password keeper**
+  * A good option is [*KeePass*](https://keepass.info/)
+  * Have a **single, strong** password to open your password database
+  * Let the password keeper **generate strong passwords** for you
+  * **Never** use the same password on multiple sites
+
+> Go and install [KeePass](https://keepass.info/)
+<!-- .element: class="fragment" -->
 
 
 ## [Visual Studio Code](https://code.visualstudio.com) (short *VSCode*)
@@ -56,10 +74,10 @@ Go on and [install Visual Studio Code](https://code.visualstudio.com/docs/setup/
 ## VSCode Tip #1: Folder Management
 
 * Create <!-- .element: class="fragment" --> **one folder dedicated to each course** on your computers hard disk
-  * E.g. *C:\HTL\PRO* (Windows), */home/youruser/HTL/PRO* (Linux)
+  * E.g. *C:\HTL\PRO* (Windows), */home/your.user/HTL/PRO* (Linux; replace *your.user* with your user's name)
 * Create <!-- .element: class="fragment" --> a **subfolder for each exercise**
   * Consider a numbering schema (e.g. *0010-...*, *0020-...*)
-  * E.g. *C:\HTL\PRO\0010-statements* (Windows), */home/youruser/HTL/PRO/0010-statements* (Linux)
+  * E.g. *C:\HTL\PRO\0010-statements* (Windows), */home/your.user/HTL/PRO/0010-statements* (Linux)
 * Whenever <!-- .element: class="fragment" --> you work on an exercise, **open the folder in VSCode**
 
 <div class="container" data-markdown><div class="col" data-markdown>
@@ -70,6 +88,23 @@ Go on and [install Visual Studio Code](https://code.visualstudio.com/docs/setup/
 </div><div class="col" data-markdown>
 
 ![Open Folder from start screen](images/vscode-open-folder-startscreen.png) <!-- .element height="75%" width="75%" -->
+<!-- .element: class="fragment" -->
+
+</div></div>
+
+
+## VSCode Tip #1: Folder Management
+
+How to copy path from Explorer to VSCode?
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+![Explorer: Copy path](images/explorer-copy-path.gif)
+<!-- .element: class="fragment" -->
+
+</div><div class="col" data-markdown>
+
+![Explorer: Copy as path](images/explorer-copy-as-path.png) <!-- .element height="60%" width="60%" -->
 <!-- .element: class="fragment" -->
 
 </div></div>
@@ -120,3 +155,40 @@ You can drag & drop files from/to explorer to/from VSCode
 
 > 🖨️ them, put them beside you,<br/>ignore the 🐭, learn to ❤️ the ⌨️
 <!-- .element: class="fragment" -->
+
+
+## WinMerge
+
+* Open Source tool to compare and merge files and folders
+  * Very useful in many situations
+
+> Go and install [WinMerge](https://winmerge.org/?lang=en)
+
+
+## [GitHub](https://github.com)
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+* GitHub <!-- .element: class="fragment" --> is the one of the largest code repositories in the world
+  * Home of many of many widely-used Open Source projects (e.g. [VSCode](https://github.com/microsoft/vscode), [Linux](https://github.com/torvalds/linux))
+* We <!-- .element: class="fragment" --> are going to make use of GitHub a lot in this course
+  * Starts in a few weeks
+
+> Create a [GitHub user](https://github.com/signup)
+<!-- .element: class="fragment" -->
+
+> Install [GitHub Desktop](https://desktop.github.com/)
+<!-- .element: class="fragment" -->
+
+</div><div class="col" data-markdown>
+
+![GitHub Octocat](images/octocat.png)
+
+[Build Your Own Octocat](https://myoctocat.com/build-your-octocat/)
+
+</div></div>
+
+
+## Tools - We Are Ready to Code 🤩
+
+![Fuiyoh!](https://c.tenor.com/89eNuq5ziYcAAAAC/fuiyoh-uncleroger.gif) <!-- .element height="50%" width="50%" -->
