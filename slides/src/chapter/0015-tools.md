@@ -5,6 +5,11 @@
 Source: [xkcd.com](https://xkcd.com/), a huge source of funny tech and science comics
 
 
+## Video Lecture
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZQ_lHOGcXg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## KeePass
 
 > Keep your online identities secure 🔒!
