@@ -3,6 +3,11 @@
 ![C Sharp musical note](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Music_C_sharp.svg/480px-Music_C_sharp.svg.png)
 
 
+## Video Lecture
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IFLC5hvy1ZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyro<span translate="no">&nbsp;scope&nbsp;</span>; picture-in-picture" allowfullscreen></iframe>
+
+
 ## We Program in C#
 
 > A **Programming Language** is the language we use to tell the computer what we want it to do
