@@ -51,6 +51,7 @@ Go on and [install Visual Studio Code](https://code.visualstudio.com/docs/setup/
   * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
   * [NuGet Package Manager GUI](https://marketplace.visualstudio.com/items?itemName=aliasadidev.nugetpackagemanagergui)
   * [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+  * [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer)
 * Optional <!-- .element: class="fragment" -->
   * [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
   * Choose a [great color theme](https://medium.com/quick-code/the-best-vs-code-themes-2022-9e9b648c4596) yourself...
