@@ -1,19 +1,5 @@
 # Programming Fundamentals Course (C#)
 
-## Lightning Talks
+This repository contains the material for a C# programming course (beginners, 1st grade) at the [HTBLA Leonding](https://htl-leonding.ac.at).
 
-### First Semester
-
-1. All about `string` literals
-   * [The string type](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-string-type)
-   * [$ - string interpolation (C# reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)
-2. The `switch` statement
-   * [The `switch` statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements#the-switch-statement)
-3. `break` and `continue`
-   * [The `break` statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/jump-statements#the-break-statement)
-   * [The `continue` statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/jump-statements#the-continue-statement)
-
-### Second Semester
-
-1. The `DateTime` structure
-   * [DateTime Struct](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
+View the slides at [https://bit.ly/we-love-coding](https://bit.ly/we-love-coding).
