@@ -269,6 +269,17 @@ Your sentence has 10 words.
   `1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, Fizz, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, Fizz, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, Fizz, Fizz, Fizz, Fizz, Fizz Buzz`
 
 
+## Exercise: *Palindrome*
+
+* Let <!-- .element: class="fragment" --> the user enter a string.
+* Write <!-- .element: class="fragment" --> a method that finds out if the input is a [palindrome](https://en.wikipedia.org/wiki/Palindrome)
+* Print <!-- .element: class="fragment" --> the result on the screen
+  * "This is a palindrome"
+  * "No, this is not a palindrome"
+* Need <!-- .element: class="fragment" --> demo data?
+  * [Weird Al Yankovic - BOB](https://youtu.be/gAfIikFnvuI)
+
+
 ## Pro Tips
 
 ![Me Professional](https://www.memecreator.org/static/images/memes/3652794.jpg)
