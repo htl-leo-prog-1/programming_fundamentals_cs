@@ -3,6 +3,11 @@
 ![I'm gonna make a %73tatement](https://c.tenor.com/Tfz1f4NJfWIAAAAC/im-gonna-make-a-%73tatement-richard-williams.gif)
 
 
+## Video Lecture
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Uk-Gyo1-JlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyro<span translate="no">&nbsp;scope&nbsp;</span>; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Our Very First Program
 
 The program we generated in the previous exercise looked like that:
