@@ -213,10 +213,7 @@ Console.Clear();
 
 ## Area Calculator Flowchart
 
-[![](https://mermaid.ink/img/pako:eNptUslu2zAQ_RWCp6RwotpunURACwRJbj0UdYEClXIYkyORMEUK5KiqYfjfy8UOesiF4vAtM3rkkQsnkde8M24WCjyxn8-tZWxLcX_V5M_rNbu5-cqenHG-2c6ahGLk2Kw0ISP8S21rnWUeJduB2PfeTVa-JpcsKWKD4Ju8siA8oi2EfJAIv9AIN2BTfffaEptLyQYMAXqsMvvMyfxvaHtSTfUY9qyLTUyuC69gxVbL_1lzKs9maZs5jx6heQIjJgPxjyCW7MvZkH0omixJxKz4gWEydJnV56q4FqS0Bk1NWnLnKaBPqY2RHRiwPR7KGInwFm-UI10yTmG-F_TOJOC9qLM8u23JjVfNSwSv-YIP6AfQMt7zMXFbTgoHbHkdt3E4DNTyxRnJRQIUGhObO29ky1t7ij7TKGNCL1KT87zuwARccJjIbQ9W8Jr8hBfSs4bew_DGMg4kRtGR02FML67XgaKlcLbTfTqfvInHimgMdVUl-LbXpKbdbbz0KmiZnqf687CpNqvNPazWuLlbw-f1Word8uG-W31advLu43IF_HRa8BHsb-cuA5z-AUze_CU)](https://mermaid.live/edit#pako:eNptUslu2zAQ_RWCp6RwotpunURACwRJbj0UdYEClXIYkyORMEUK5KiqYfjfy8UOesiF4vAtM3rkkQsnkde8M24WCjyxn8-tZWxLcX_V5M_rNbu5-cqenHG-2c6ahGLk2Kw0ISP8S21rnWUeJduB2PfeTVa-JpcsKWKD4Ju8siA8oi2EfJAIv9AIN2BTfffaEptLyQYMAXqsMvvMyfxvaHtSTfUY9qyLTUyuC69gxVbL_1lzKs9maZs5jx6heQIjJgPxjyCW7MvZkH0omixJxKz4gWEydJnV56q4FqS0Bk1NWnLnKaBPqY2RHRiwPR7KGInwFm-UI10yTmG-F_TOJOC9qLM8u23JjVfNSwSv-YIP6AfQMt7zMXFbTgoHbHkdt3E4DNTyxRnJRQIUGhObO29ky1t7ij7TKGNCL1KT87zuwARccJjIbQ9W8Jr8hBfSs4bew_DGMg4kRtGR02FML67XgaKlcLbTfTqfvInHimgMdVUl-LbXpKbdbbz0KmiZnqf687CpNqvNPazWuLlbw-f1Word8uG-W31advLu43IF_HRa8BHsb-cuA5z-AUze_CU)
-
-
-## Area Calculator Flowchart
+<div class="container" data-markdown><div class="col" data-markdown>
 
 > A flowchart is a diagram that depicts a process, system or computer algorithm.
 <!-- .element: class="fragment" -->
@@ -226,6 +223,12 @@ Console.Clear();
 * Readable <!-- .element: class="fragment" --> for programmers and end users
   * Great way to communicate process structure between technical and business experts
 * Read <!-- .element: class="fragment" --> [more](https://www.lucidchart.com/pages/what-is-a-flowchart-tutorial)
+
+</div><div class="col" data-markdown>
+
+[![](https://mermaid.ink/img/pako:eNptUslu2zAQ_RWCp6RwotpunURACwRJbj0UdYEClXIYkyORMEUK5KiqYfjfy8UOesiF4vAtM3rkkQsnkde8M24WCjyxn8-tZWxLcX_V5M_rNbu5-cqenHG-2c6ahGLk2Kw0ISP8S21rnWUeJduB2PfeTVa-JpcsKWKD4Ju8siA8oi2EfJAIv9AIN2BTfffaEptLyQYMAXqsMvvMyfxvaHtSTfUY9qyLTUyuC69gxVbL_1lzKs9maZs5jx6heQIjJgPxjyCW7MvZkH0omixJxKz4gWEydJnV56q4FqS0Bk1NWnLnKaBPqY2RHRiwPR7KGInwFm-UI10yTmG-F_TOJOC9qLM8u23JjVfNSwSv-YIP6AfQMt7zMXFbTgoHbHkdt3E4DNTyxRnJRQIUGhObO29ky1t7ij7TKGNCL1KT87zuwARccJjIbQ9W8Jr8hBfSs4bew_DGMg4kRtGR02FML67XgaKlcLbTfTqfvInHimgMdVUl-LbXpKbdbbz0KmiZnqf687CpNqvNPazWuLlbw-f1Word8uG-W31advLu43IF_HRa8BHsb-cuA5z-AUze_CU)](https://mermaid.live/edit#pako:eNptUslu2zAQ_RWCp6RwotpunURACwRJbj0UdYEClXIYkyORMEUK5KiqYfjfy8UOesiF4vAtM3rkkQsnkde8M24WCjyxn8-tZWxLcX_V5M_rNbu5-cqenHG-2c6ahGLk2Kw0ISP8S21rnWUeJduB2PfeTVa-JpcsKWKD4Ju8siA8oi2EfJAIv9AIN2BTfffaEptLyQYMAXqsMvvMyfxvaHtSTfUY9qyLTUyuC69gxVbL_1lzKs9maZs5jx6heQIjJgPxjyCW7MvZkH0omixJxKz4gWEydJnV56q4FqS0Bk1NWnLnKaBPqY2RHRiwPR7KGInwFm-UI10yTmG-F_TOJOC9qLM8u23JjVfNSwSv-YIP6AfQMt7zMXFbTgoHbHkdt3E4DNTyxRnJRQIUGhObO29ky1t7ij7TKGNCL1KT87zuwARccJjIbQ9W8Jr8hBfSs4bew_DGMg4kRtGR02FML67XgaKlcLbTfTqfvInHimgMdVUl-LbXpKbdbbz0KmiZnqf687CpNqvNPazWuLlbw-f1Word8uG-W31advLu43IF_HRa8BHsb-cuA5z-AUze_CU)
+
+</div></div>
 
 
 ## Example: Number Analyzer
@@ -262,9 +265,9 @@ Console.WriteLine("The next number is " + number);
 * You <!-- .element: class="fragment" --> are programming a computer game
   * Players gather ore ⛏️ and sell it to get gold coins 🪙
 * Rules <!-- .element: class="fragment" -->
-  * 🥇 For the first 10 pieces of ore, the player gets 10 coins per piece
-  * 🥈 For the next 5 pieces of ore, the player gets 5 coins per piece
-  * 🥉 For the next 3 pieces of ore, the player gets 2 coins per piece
+  * For the first 10 pieces of ore, the player gets 10 coins per piece
+  * For the next 5 pieces of ore, the player gets 5 coins per piece
+  * For the next 3 pieces of ore, the player gets 2 coins per piece
   * For all remaining pieces of ore, the player gets 1 coin per piece
 * Examples <!-- .element: class="fragment" -->
   * Player gathered 25 pieces of ore, she gets *10 \* 10 + 5 \* 5 + 3 \* 2 + 7 \* 1 = 138* golden coins
