@@ -2,7 +2,8 @@
 
 # 👩‍💻👨‍💻
 
-Programming Course @ HTL Leonding
+Programming Course @ HTL Leonding<br/>
+Sources: https://github.com/htl-leo-prog-1/programming_fundamentals_cs
 
 
 ## [https://bit.ly/we-love-coding](https://bit.ly/we-love-coding)
