@@ -178,6 +178,27 @@ i -= 2; // i is now back to 1
 ```
 
 
+## [`Math`](https://learn.microsoft.com/en-us/dotnet/api/system.math)
+
+* The <!-- .element: class="fragment" --> class `Math` contains a large number of very useful mathematical functions and constants
+  * PI, absolute value, trigonometric functions (sin, tan, cos, etc.), etc.
+  * Next slide contains a table with the most important functions that you should remember for now
+* Like <!-- .element: class="fragment" --> with `Console`, the full name is `System.Math`
+
+
+## [`Math`](https://learn.microsoft.com/en-us/dotnet/api/system.math)
+
+| Function | Description |
+|---|---|
+| [`Math.PI`](https://learn.microsoft.com/en-us/dotnet/api/system.math.pi) | The constant π |
+| [`Math.Abs`](https://learn.microsoft.com/en-us/dotnet/api/system.math.abs) | Absolute value of a specified number |
+| [`Math.Floor`](https://learn.microsoft.com/en-us/dotnet/api/system.math.floor) | Returns largest integral value <= the specified number (e.g. 1.4 becomes 1, 1.9 becomes 1, 2.1 becomes 2) |
+| [`Math.Ceiling`](https://learn.microsoft.com/en-us/dotnet/api/system.math.ceiling) | Returns smallest integral value >= the specified number (e.g. 1.4 becomes 2, 1.9 becomes 2, 2.1 becomes 3) |
+| [`Math.Min`](https://learn.microsoft.com/en-us/dotnet/api/system.math.min),&nbsp;[`Math.Max`](https://learn.microsoft.com/en-us/dotnet/api/system.math.max) | Returns the smaller/larger of two numbers. |
+| [`Math.Pow`](https://learn.microsoft.com/en-us/dotnet/api/system.math.pow) | Returns a specified number raised to the specified power |
+| [`Math.Round`](https://learn.microsoft.com/en-us/dotnet/api/system.math.round) | Rounds a value to the nearest integer or to the specified number of fractional digits |
+
+
 ## Enough Theory - Show Me the Code
 
 ![Enough theory](https://i.giphy.com/13uaMxgBhGP9ba.gif)
@@ -256,7 +277,7 @@ Console.WriteLine("The next number is " + number);
 * Ask <!-- .element: class="fragment" --> the user for the radius of the circle.
 * The <!-- .element: class="fragment" --> formula for calculating the area of a circle is `A = π * r²`
   * Use a *constant* for π and use the value 3.1415927
-  * Pro tip: Use the pre-defined constant [`System.Math.PI`](https://docs.microsoft.com/en-us/dotnet/api/system.math.pi)
+  * Tip: Use the pre-defined constant [`System.Math.PI`](https://docs.microsoft.com/en-us/dotnet/api/system.math.pi)
 * Print <!-- .element: class="fragment" --> the area of the circle on the screen.
 
 
