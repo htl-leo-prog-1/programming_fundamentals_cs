@@ -306,15 +306,30 @@ Console.WriteLine("The next number is " + number);
 ## Expressions
 
 > We call calculations that result in a value of a certain type **Expressions**
+<!-- .element: class="fragment" -->
 
-* Expressions from previous examples:
+* Expressions <!-- .element: class="fragment" --> from previous examples:
   * `length * width` - result is a number
   * `number % 2` - result is a number
   * `remainder == 0` - result is a Boolean value (`true` or `false`)
   * `number > 5` - result is a Boolean value (`true` or `false`)
   * `"The next number is " + number` - result is a string
-* As you can see, expressions do *not* end with a semicolon
-* Expressions will become very important in more advanced code examples
+* As <!-- .element: class="fragment" --> you can see, expressions do *not* end with a semicolon
+* Expressions <!-- .element: class="fragment" --> will become very important in more advanced code examples
+
+
+## Patterns
+
+> **Patterns** are super powerful in C# 💪
+<!-- .element: class="fragment" -->
+
+* Use <!-- .element: class="fragment" --> the `is` keyword
+* For <!-- .element: class="fragment" --> now, just remember constant and relational pattern
+  * `if (selection is 1 or 2) { ... }`
+  * `if (grade is >= 1 and < 5) { ... }`
+  * `if (input is 'a' or 'b' or 'c') { ... }`
+  * `if (speed is >= 50 and not > 100) { ... }`
+* You <!-- .element: class="fragment" --> will learn more patterns later in this course and in the upcoming years
 
 
 ## Advanced Integer Literals
