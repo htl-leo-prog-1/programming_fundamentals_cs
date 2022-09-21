@@ -178,27 +178,6 @@ i -= 2; // i is now back to 1
 ```
 
 
-## [`Math`](https://learn.microsoft.com/en-us/dotnet/api/system.math)
-
-* The <!-- .element: class="fragment" --> class `Math` contains a large number of very useful mathematical functions and constants
-  * PI, absolute value, trigonometric functions (sin, tan, cos, etc.), etc.
-  * Next slide contains a table with the most important functions that you should remember for now
-* Like <!-- .element: class="fragment" --> with `Console`, the full name is `System.Math`
-
-
-## [`Math`](https://learn.microsoft.com/en-us/dotnet/api/system.math)
-
-| Function | Description |
-|---|---|
-| [`Math.PI`](https://learn.microsoft.com/en-us/dotnet/api/system.math.pi) | The constant π |
-| [`Math.Abs`](https://learn.microsoft.com/en-us/dotnet/api/system.math.abs) | Absolute value of a specified number |
-| [`Math.Floor`](https://learn.microsoft.com/en-us/dotnet/api/system.math.floor) | Returns largest integral value <= the specified number (e.g. 1.4 becomes 1, 1.9 becomes 1, 2.1 becomes 2) |
-| [`Math.Ceiling`](https://learn.microsoft.com/en-us/dotnet/api/system.math.ceiling) | Returns smallest integral value >= the specified number (e.g. 1.4 becomes 2, 1.9 becomes 2, 2.1 becomes 3) |
-| [`Math.Min`](https://learn.microsoft.com/en-us/dotnet/api/system.math.min),&nbsp;[`Math.Max`](https://learn.microsoft.com/en-us/dotnet/api/system.math.max) | Returns the smaller/larger of two numbers. |
-| [`Math.Pow`](https://learn.microsoft.com/en-us/dotnet/api/system.math.pow) | Returns a specified number raised to the specified power |
-| [`Math.Round`](https://learn.microsoft.com/en-us/dotnet/api/system.math.round) | Rounds a value to the nearest integer or to the specified number of fractional digits |
-
-
 ## Enough Theory - Show Me the Code
 
 ![Enough theory](https://i.giphy.com/13uaMxgBhGP9ba.gif)
@@ -270,6 +249,27 @@ Console.WriteLine("The next number is " + number);
 ```
 
 
+## [`Math`](https://learn.microsoft.com/en-us/dotnet/api/system.math)
+
+* The <!-- .element: class="fragment" --> class `Math` contains a large number of very useful mathematical functions and constants
+  * PI, absolute value, trigonometric functions (sin, tan, cos, etc.), etc.
+  * Next slide contains a table with the most important functions that you should remember for now
+* Like <!-- .element: class="fragment" --> with `Console`, the full name is `System.Math`
+
+
+## [`Math`](https://learn.microsoft.com/en-us/dotnet/api/system.math)
+
+| Function | Description |
+|---|---|
+| [`Math.PI`](https://learn.microsoft.com/en-us/dotnet/api/system.math.pi) | The constant π |
+| [`Math.Abs`](https://learn.microsoft.com/en-us/dotnet/api/system.math.abs) | Absolute value of a specified number |
+| [`Math.Floor`](https://learn.microsoft.com/en-us/dotnet/api/system.math.floor) | Returns largest integral value <= the specified number (e.g. 1.4 becomes 1, 1.9 becomes 1, 2.1 becomes 2) |
+| [`Math.Ceiling`](https://learn.microsoft.com/en-us/dotnet/api/system.math.ceiling) | Returns smallest integral value >= the specified number (e.g. 1.4 becomes 2, 1.9 becomes 2, 2.1 becomes 3) |
+| [`Math.Min`](https://learn.microsoft.com/en-us/dotnet/api/system.math.min),&nbsp;[`Math.Max`](https://learn.microsoft.com/en-us/dotnet/api/system.math.max) | Returns the smaller/larger of two numbers. |
+| [`Math.Pow`](https://learn.microsoft.com/en-us/dotnet/api/system.math.pow) | Returns a specified number raised to the specified power |
+| [`Math.Round`](https://learn.microsoft.com/en-us/dotnet/api/system.math.round) | Rounds a value to the nearest integer or to the specified number of fractional digits |
+
+
 ## Example: Area Calculator For Circles
 
 > Build an area calculator like before, but this time for circles, not rectangles
@@ -306,16 +306,15 @@ Console.WriteLine("The next number is " + number);
 ## <span translate="no">&nbsp;Expressions&nbsp;</span>
 
 > We call calculations that result in a value of a certain type **<span translate="no">&nbsp;Expressions&nbsp;</span>**
-<!-- .element: class="fragment" -->
 
-* <span translate="no">&nbsp;Expressions&nbsp;</span> <!-- .element: class="fragment" --> from previous examples:
+* <span translate="no">&nbsp;Expressions&nbsp;</span> from previous examples:
   * `length * width` - result is a number
   * `number % 2` - result is a number
   * `remainder == 0` - result is a Boolean value (`true` or `false`)
   * `number > 5` - result is a Boolean value (`true` or `false`)
   * `"The next number is " + number` - result is a string
-* As <!-- .element: class="fragment" --> you can see, <span translate="no">&nbsp;expressions&nbsp;</span> do *not* end with a semicolon
-* <span translate="no">&nbsp;Expressions&nbsp;</span> <!-- .element: class="fragment" --> will become very important in more advanced code examples
+* As you can see, <span translate="no">&nbsp;expressions&nbsp;</span> do *not* end with a semicolon
+* <span translate="no">&nbsp;Expressions&nbsp;</span> will become very important in more advanced code examples
 
 
 ## Patterns
