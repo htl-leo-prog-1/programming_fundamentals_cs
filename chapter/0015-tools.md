@@ -9,6 +9,8 @@ Source: [xkcd.com](https://xkcd.com/), a huge source of funny tech and science c
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQ_lHOGcXg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyro<span translate="no">&nbsp;scope&nbsp;</span>; picture-in-picture" allowfullscreen></iframe>
 
+[YouTube Playlist for course](https://youtube.com/playlist?list=PLhGL9p3BWHwsJN6kbQPOVZpEw2NXQXZQN)
+
 
 ## KeePass
 

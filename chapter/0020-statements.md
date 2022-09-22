@@ -7,6 +7,8 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Uk-Gyo1-JlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyro<span translate="no">&nbsp;scope&nbsp;</span>; picture-in-picture" allowfullscreen></iframe>
 
+[YouTube Playlist for course](https://youtube.com/playlist?list=PLhGL9p3BWHwsJN6kbQPOVZpEw2NXQXZQN)
+
 
 ## Our Very First Program
 
