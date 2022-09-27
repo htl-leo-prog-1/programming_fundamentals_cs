@@ -324,20 +324,6 @@ Console.WriteLine("The next number is " + number);
 * Expressions will become very important in more advanced code examples
 
 
-## Patterns
-
-> **Patterns** are super powerful in C# 💪
-<!-- .element: class="fragment" -->
-
-* Use <!-- .element: class="fragment" --> the `is` keyword
-* For <!-- .element: class="fragment" --> now, just remember constant and relational pattern
-  * `if (selection is 1 or 2) { ... }`
-  * `if (grade is >= 1 and < 5) { ... }`
-  * `if (input is 'a' or 'b' or 'c') { ... }`
-  * `if (speed is >= 50 and not > 100) { ... }`
-* You <!-- .element: class="fragment" --> will learn more patterns later in this course and in the upcoming years
-
-
 ## Advanced Integer Literals
 
 * Use <!-- .element: class="fragment" --> `0x` prefix to specify a numeric literal in hexadecimal format

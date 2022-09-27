@@ -17,9 +17,9 @@
 // For the moment, trust me 😉. The code works.
 var number = Random.Shared.Next(1, 7);
 
-    ┌────────────┐◄──────────────────────────────────── Condition (is an EXPRESSION)
-if (│ number > 3 │)
-    └────────────┘
+    ┌─────────────┐◄─────────────────────────────────── Condition (is an EXPRESSION)
+if (│ number <= 3 │)
+    └─────────────┘
 ┌──────────────────────────────────────────────┐◄────── Block is executed if condition is TRUE
 │{                                             │
 │  Console.WriteLine("You had a 1, 2, or 3."); │
@@ -173,3 +173,17 @@ else { Console.WriteLine("Player " + winner + " wins"); }
   * Paper disproves Spock
   * Spock vaporizes Rock
   * (and as it always has) Rock crushes Scissors
+
+
+## Patterns
+
+> **Patterns** are super powerful in C# 💪
+<!-- .element: class="fragment" -->
+
+* Use <!-- .element: class="fragment" --> the `is` keyword
+* For <!-- .element: class="fragment" --> now, just remember constant and relational pattern
+  * `if (selection is 1 or 2) { ... }`
+  * `if (grade is >= 1 and < 5) { ... }`
+  * `if (input is 'a' or 'b' or 'c') { ... }`
+  * `if (speed is >= 50 and not > 100) { ... }`
+* You <!-- .element: class="fragment" --> will learn more patterns later in this course and in the upcoming years
