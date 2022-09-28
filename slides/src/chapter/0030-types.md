@@ -288,6 +288,15 @@ Console.WriteLine("The next number is " + number);
 * Print <!-- .element: class="fragment" --> the area of the circle on the screen.
 
 
+## Video for Example: Going for Gold ⛏️🪙
+
+Requirements for code sample see next slide
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rMPh9XavDIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[YouTube Playlist for course](https://youtube.com/playlist?list=PLhGL9p3BWHwsJN6kbQPOVZpEw2NXQXZQN)
+
+
 ## Example: Going for Gold ⛏️🪙
 
 * You <!-- .element: class="fragment" --> are programming a computer game
