@@ -5,6 +5,13 @@
 <span translate="no">Curly Brace</span>, from <span translate="no">&nbsp;[Cave Story](https://en.wikipedia.org/wiki/Cave_Story)</span>
 
 
+## Video Lecture
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0kh5C5U2uhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[YouTube Playlist for course](https://youtube.com/playlist?list=PLhGL9p3BWHwsJN6kbQPOVZpEw2NXQXZQN)
+
+
 ## Grouping Code in Blocks
 
 > Use **Curly Braces** to group *Statements* into blocks.
