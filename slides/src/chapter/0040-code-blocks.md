@@ -146,9 +146,9 @@ Console.WriteLine("The answer is " + answer); ◄────── ⚠️💔 D
 * We <!-- .element: class="fragment" --> can repeat the execution of the block with a **loop**
   * There are multiple forms of loops, you will learn more about them soon
 * We <!-- .element: class="fragment" --> can assign a name to a code blocks
-  * Named code blocks are called **functions**
-  * We can call functions wherever we need them in our code
-  * You will learn more about functions later in this course
+  * Named code blocks are called **methods**
+  * We can call methods wherever we need them in our code
+  * You will learn more about methods later in this course
 
 
 ## Tell me more!
