@@ -7,14 +7,14 @@
 
 <div class="container" data-markdown><div class="col" data-markdown>
 
-```cs[|4|7|10|13]
+```cs[]
 Console.Write("What is your grade? ");
 int grade = int.Parse(Console.ReadLine()!);
 
 if (grade == 1)
 {
     Console.WriteLine("Wow, you are a genius!");
-} else if (grade is 2 or 3)
+} else if (grade == 2 || grade == 3)
 {
     Console.WriteLine("You are a good student!");
 } else if (grade == 4)
@@ -28,7 +28,7 @@ if (grade == 1)
 
 </div><div class="col" data-markdown>
 
-```cs[|4|6-8|9-12|13-15|16-18]
+```cs[]
 Console.Write("What is your grade? ");
 int grade = int.Parse(Console.ReadLine()!);
 
@@ -62,6 +62,33 @@ switch (grade)
 * It <!-- .element: class="fragment" --> depends...
 * Try <!-- .element: class="fragment" --> to choose the selection statement (`if` or `switch`) that is easier to understand in your case
   * Sometimes, both options are ok and it doesn't really matter
+
+
+## Exercise: Calculator
+
+* Let <!-- .element: class="fragment" --> the user enter two numbers
+* Ask <!-- .element: class="fragment" --> the user for an operation that she wants to perform (+, -, \*, or \/)
+* Perform <!-- .element: class="fragment" --> the selected operation and print the result
+  * Use a `switch` statement or expression in your solution
+* Example <!-- .element: class="fragment" --> output:
+
+```txt
+First value: 10
+Second value: 15
+Operation (+, -, *, or /): +
+The result is 25
+```
+<!-- .element: class="fragment" -->
+
+
+## Exercise: 🪨📃✂️🦎🖖
+
+> Change *rock, paper, scissors, lizard, spock*<br/>from `if` to `switch`
+
+
+## Pro Tips
+
+![We are very professional](https://www.meme-arsenal.com/memes/20c8fb489b732dc6ed6512c257f40924.jpg)
 
 
 ## `switch` Expressions
@@ -105,19 +132,3 @@ Console.WriteLine(message);
 ```
 
 </div></div>
-
-
-## Exercise: Calculator
-
-* Let the user enter two numbers
-* Ask the user for an operation that she wants to perform (+, -, \*, or \/)
-* Perform the selected operation and print the result
-  * Use a `switch` statement or expression in your solution
-* Example output:
-
-  ```txt
-  First value: 10
-  Second value: 15
-  Operation (+, -, *, or /): +
-  The result is 25
-  ```

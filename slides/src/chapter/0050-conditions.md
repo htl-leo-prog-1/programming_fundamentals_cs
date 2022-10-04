@@ -179,15 +179,44 @@ else { Console.WriteLine("Player " + winner + " wins"); }
 
 > Perform logical operations with *bool* operands
 
-* AND (`&&`)
+* AND <!-- .element: class="fragment" --> (`&&`)
   * Results in true if **both** operands are true
   * Example: `knobs == 2 && color == "gray"`
-* OR (`||`)
+* OR <!-- .element: class="fragment" --> (`||`)
   * Results in true if **at least one** operand is true
   * Example: `knobs == 2 || length == 2`
-* NOT (`!`)
-  * Logically negates operand
+* NOT <!-- .element: class="fragment" --> (`!`)
+  * Logically **negates** operand
   * Example: `knobs == 2 && !(color == "gray")`
+
+
+## Boolean Logical Operators
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+**AND**<!-- .element: class="fragment" -->
+
+|       | true  | false |
+|-------|-------|-------|
+| true  | true  | false |
+| false | false | false |
+<!-- .element: class="fragment" -->
+
+true && true == true,<br/>true && false == false,<br/>...<!-- .element: class="fragment" -->
+
+</div><div class="col" data-markdown>
+
+**OR**<!-- .element: class="fragment" -->
+
+|       | true  | false |
+|-------|-------|-------|
+| true  | true  | true  |
+| false | true  | false |
+<!-- .element: class="fragment" -->
+
+true || true == true,<br/>true || false == true,<br/>false || false == false,<br/>...<!-- .element: class="fragment" -->
+
+</div></div>
 
 
 ## Examples: Boolean Logical Operators
@@ -267,6 +296,48 @@ else { Console.WriteLine("Player " + winner + " wins"); }
     </g>
   </g><!-- .element: class="fragment fade-in-then-out" -->
 </svg>
+
+
+## Exercise: Flat Evaluator 🏠
+
+* You <!-- .element: class="fragment" --> are looking for a flat with...
+  * ...a size of at least 100 square meters,
+  * ...at least two bedrooms,
+  * ...a balcony or a patio
+* Write <!-- .element: class="fragment" --> a program where you ask the user for...
+  * ...the size of the house,
+  * ...the number of bedrooms,
+  * ...whether the flat has a balcony or a patio<br/>
+    (user should be able to enter 1 for *balcony*, 2 for *patio*, 3 for *none*, or 4 for *both*)
+* Use <!-- .element: class="fragment" --> an `if` statement with boolean logical operators to find out if the flat fulfills your requirements
+* Print <!-- .element: class="fragment" --> a corresponding message
+
+
+## Exercise: Flat Evaluator 🏠
+
+```cs[|9]
+Console.Write("Size of the house in m²: ");
+var size = int.Parse(Console.ReadLine()!);
+
+Console.Write("Number of bedrooms: ");
+var bedrooms = int.Parse(Console.ReadLine()!);
+
+Console.Write("Does it have a balcony (1), patio (2), none (3), or both (4): ");
+var balcPat = int.Parse(Console.ReadLine()!);
+if (size >= 100 && bedrooms >= 2 && (balcPat == 1 || balcPat == 2 || balcPat == 4))
+{
+    Console.WriteLine("You should buy this flat!");
+}
+else
+{
+    Console.WriteLine("Sorry, no fit.");
+}
+```
+
+
+## Pro Tips
+
+![Like a boss](https://c.tenor.com/TgDOSZ0PpNsAAAAd/zoolander-boss.gif)
 
 
 ## Patterns
