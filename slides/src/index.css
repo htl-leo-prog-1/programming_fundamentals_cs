@@ -64,6 +64,11 @@ svg .code {
   font-size: 12px;
 }
 
+svg .lego-code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
 svg .note {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -80,6 +85,13 @@ svg rect.highlight {
   fill: transparent;
   stroke: red;
   stroke-width: 1px;
+  stroke-dasharray: 1 1;
+}
+
+svg rect.lego-highlight {
+  fill: transparent;
+  stroke: red;
+  stroke-width: 3px;
   stroke-dasharray: 1 1;
 }
 
