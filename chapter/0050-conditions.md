@@ -175,6 +175,100 @@ else { Console.WriteLine("Player " + winner + " wins"); }
   * (and as it always has) Rock crushes Scissors
 
 
+## Boolean Logical Operators
+
+> Perform logical operations with *bool* operands
+
+* AND (`&&`)
+  * Results in true if **both** operands are true
+  * Example: `knobs == 2 && color == "gray"`
+* OR (`||`)
+  * Results in true if **at least one** operand is true
+  * Example: `knobs == 2 || length == 2`
+* NOT (`!`)
+  * Logically negates operand
+  * Example: `knobs == 2 && !(color == "gray")`
+
+
+## Examples: Boolean Logical Operators
+
+<svg width="1024" height="500" viewbox="0 0 1850 900">
+  <image href="../images/bricks.png" height="768" width="1024" />
+  <g>
+    <rect class="lego-highlight" x="350" y="150" width="270" height="150" />
+    <g transform="translate(1075, 50)">
+      <text class="lego-code" x="0" y="0" font-size="40">knobs == 6 && color == "blue"</text>
+    </g>
+  </g><!-- .element: class="fragment fade-in-then-out" -->
+  <g>
+    <rect class="lego-highlight" x="70" y="350" width="230" height="180" />
+    <rect class="lego-highlight" x="20" y="75" width="290" height="225" />
+    <rect class="lego-highlight" x="360" y="470" width="320" height="220" />
+    <rect class="lego-highlight" x="640" y="110" width="320" height="140" />
+    <g transform="translate(1075, 100)">
+      <text class="lego-code" x="0" y="0" font-size="40">knobs == 4 || color == "red"</text>
+    </g>
+  </g><!-- .element: class="fragment fade-in-then-out" -->
+  <g>
+    <rect class="lego-highlight" x="20" y="75" width="290" height="225" />
+    <rect class="lego-highlight" x="360" y="470" width="320" height="220" />
+    <g transform="translate(1075, 150)">
+      <text class="lego-code" x="0" y="0" font-size="40">
+        <tspan x="0">knobs >= 4</tspan>
+        <tspan x="25" dy="1.2em">&& !(color == "blue")</tspan>
+      </text>
+    </g>
+  </g><!-- .element: class="fragment fade-in-then-out" -->
+  <g>
+    <rect class="lego-highlight" x="420" y="350" width="150" height="120" />
+    <rect class="lego-highlight" x="730" y="350" width="200" height="220" />
+    <g transform="translate(1075, 250)">
+      <text class="lego-code" x="0" y="0" font-size="40">
+        <tspan x="0">knobs % 2 == 1</tspan>
+        <tspan x="25" dy="1.2em">&& color == "gray"</tspan>
+      </text>
+    </g>
+  </g><!-- .element: class="fragment fade-in-then-out" -->
+  <g>
+    <rect class="lego-highlight" x="630" y="260" width="150" height="140" />
+    <g transform="translate(1075, 350)">
+      <text class="lego-code" x="0" y="0" font-size="40">
+        <tspan x="0">knobs % 2 == 0</tspan>
+        <tspan x="25" dy="1.2em">&& color == "green"</tspan>
+        <tspan x="25" dy="1.2em">&& knobs < 3</tspan>
+      </text>
+    </g>
+  </g><!-- .element: class="fragment fade-in-then-out" -->
+  <g>
+    <rect class="lego-highlight" x="70" y="350" width="220" height="180" />
+    <rect class="lego-highlight" x="20" y="75" width="290" height="210" />
+    <rect class="lego-highlight" x="360" y="470" width="320" height="220" />
+    <rect class="lego-highlight" x="640" y="110" width="320" height="140" />
+    <rect class="lego-highlight" x="630" y="260" width="150" height="140" />
+    <rect class="lego-highlight" x="350" y="150" width="270" height="130" />
+    <rect class="lego-highlight" x="300" y="290" width="100" height="80" />
+    <g transform="translate(1075, 500)">
+      <text class="lego-code" x="0" y="0" font-size="40">
+        <tspan x="0">color == "blue"</tspan>
+        <tspan x="25" dy="1.2em">|| color == "green"</tspan>
+        <tspan x="25" dy="1.2em">|| color == "red"</tspan>
+      </text>
+    </g>
+  </g><!-- .element: class="fragment fade-in-then-out" -->
+  <g>
+    <rect class="lego-highlight" x="630" y="260" width="150" height="140" />
+    <rect class="lego-highlight" x="300" y="290" width="100" height="80" />
+    <g transform="translate(1075, 650)">
+      <text class="lego-code" x="0" y="0" font-size="40">
+        <tspan x="0">knobs < 3</tspan>
+        <tspan x="25" dy="1.2em">&& !(color == "gray"</tspan>
+        <tspan x="50" dy="1.2em">|| color == "red")</tspan>
+      </text>
+    </g>
+  </g><!-- .element: class="fragment fade-in-then-out" -->
+</svg>
+
+
 ## Patterns
 
 > **Patterns** are super powerful in C# 💪
