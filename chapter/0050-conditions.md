@@ -222,7 +222,7 @@ true || true == true,<br/>true || false == true,<br/>false || false == false,<br
 ## Examples: Boolean Logical Operators
 
 <svg width="1024" height="500" viewbox="0 0 1850 900">
-  <image href="../images/bricks.png" height="768" width="1024" />
+  <image href="images/bricks.png" height="768" width="1024" />
   <g>
     <rect class="lego-highlight" x="350" y="150" width="270" height="150" />
     <g transform="translate(1075, 50)">
