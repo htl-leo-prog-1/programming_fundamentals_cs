@@ -3,6 +3,13 @@
 ![Not sure if or else](https://kodular-community.s3.dualstack.eu-west-1.amazonaws.com/original/3X/8/2/82ad1d18adb1aba033d9ee85b27e9e1ebea7f651.jpeg)
 
 
+## Video Lecture
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A5ABdS7qtpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[YouTube Playlist for course](https://youtube.com/playlist?list=PLhGL9p3BWHwsJN6kbQPOVZpEw2NXQXZQN)
+
+
 ## The `if` Statement
 
 * Only <!-- .element: class="fragment" --> executes a code block if a **condition** is true
