@@ -342,6 +342,16 @@ else
 ```
 
 
+## Exercise: Grade Calculator
+
+> This exercise must be acquired from **GitHub**:<br/>[Classroom Link](https://classroom.github.com/a/dwjhqF74)
+
+* In <!-- .element: class="fragment" --> this exercise you have to implement a *grade calculator*.
+* Users <!-- .element: class="fragment" --> enter the points that they got on exams and on homework.
+* Based <!-- .element: class="fragment" --> on that, you must calculate the grade.
+* The <!-- .element: class="fragment" --> exercise is structured in levels. Try to solve as many as possible.
+
+
 ## Pro Tips
 
 ![Like a boss](https://c.tenor.com/TgDOSZ0PpNsAAAAd/zoolander-boss.gif)
