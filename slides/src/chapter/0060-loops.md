@@ -61,13 +61,13 @@ Console.WriteLine("Thank you and good night");
   * Solve each problem two times, first with a `while` and then with a `do..while` loop
 * Level <!-- .element: class="fragment" --> 1 (relatively easy):
   * All numbers between 1 and 10:<br/>
-  * `1 2 3 4 5 6 7 8 9 10`
+    `1 2 3 4 5 6 7 8 9 10`
   * All numbers between 1 and 10 times 2:<br/>
     `2 4 6 8 10 12 14 16 18 20`
 * Level <!-- .element: class="fragment" --> 2 (a bit harder):
-  * All numbers between 1 and 20 that can be divided by 3 without a remainder:<br/>
+  * All numbers between 0 and 20 that can be divided by 3 without a remainder:<br/>
     `0 3 6 9 12 15 18`
-  * Sum of all numbers between 1 and 20 that can be divided by 3 without a remainder:<br/>
+  * Sum of all numbers between 0 and 20 that can be divided by 3 without a remainder:<br/>
     `63`
 * Level <!-- .element: class="fragment" --> 3 (can you make it?):
   * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) up to 34:<br/>
