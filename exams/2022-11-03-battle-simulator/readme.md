@@ -6,14 +6,14 @@ A group of enthusiastic *Role Playing Game* (RPG) fans asked you to build a batt
 
 You simulator must support the following character roles:
 
-| Role name        | Image                                         | Description                                          |
-| ---------------- | --------------------------------------------- | ---------------------------------------------------- |
-| 🏴‍☠️ Pirate        | <img src="pirate.png" width="50px" />         | Fearless fighter with good strength and armor        |
-| 🪨 Stone Chewer   | <img src="stone-chewer.png" width="50px" />   | Slow, but very strong and impervious against attacks |
-| 👻 Ghost Warrior  | <img src="ghost-warrior.png" width="50px" />  | Fast warrior, hard to overcome                       |
-| 🦸‍♀️ Outworlder     | <img src="outworlder.png" width="50px" />     | Can only inflict minor damage, but is super fast     |
-| ⚔️ Monster Knight | <img src="monster-knight.png" width="50px" /> | Well-balanced warrior with decent strength and armor |
-| 👺 Dark Goblin    | <img src="dark-goblin.png" width="50px" />    | Not very strong, but with heavy magical armor        |
+| Role name      | Image                                         | Description                                          |
+| -------------- | --------------------------------------------- | ---------------------------------------------------- |
+| Pirate         | <img src="pirate.png" width="50px" />         | Fearless fighter with good strength and armor        |
+| Stone Chewer   | <img src="stone-chewer.png" width="50px" />   | Slow, but very strong and impervious against attacks |
+| Ghost Warrior  | <img src="ghost-warrior.png" width="50px" />  | Fast warrior, hard to overcome                       |
+| Outworlder     | <img src="outworlder.png" width="50px" />     | Can only inflict minor damage, but is super fast     |
+| Monster Knight | <img src="monster-knight.png" width="50px" /> | Well-balanced warrior with decent strength and armor |
+| Dark Goblin    | <img src="dark-goblin.png" width="50px" />    | Not very strong, but with heavy magical armor        |
 
 The following properties of each character define its power in fights:
 

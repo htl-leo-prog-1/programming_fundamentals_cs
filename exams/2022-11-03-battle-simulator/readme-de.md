@@ -6,14 +6,14 @@ Eine Gruppe begeisterter Fans von Rollenspielen (*Role Playing Games*, kurz *RPG
 
 Ihr Simulator muss die folgenden Charakterrollen unterstützen:
 
-| Rollenname       | Bild                                          | Beschreibung                                                   |
-| ---------------- | --------------------------------------------- | -------------------------------------------------------------- |
-| 🏴‍☠️ Pirat         | <img src="Pirate.png" width="50px" />         | Furchtloser Kämpfer mit guter Stärke und Rüstung               |
-| 🪨 Steinkauer     | <img src="stone-chewer.png" width="50px" />   | Langsam, aber sehr stark und unempfindlich gegen Angriffe      |
-| 👻 Geisterkrieger | <img src="ghost-warrior.png" width="50px" />  | Schneller Krieger, schwer zu überwinden                        |
-| 🦸‍♀️ Außenweltler   | <img src="outworlder.png" width="50px" />     | Kann nur geringen Schaden anrichten, ist aber superschnell     |
-| ⚔️ Monsterritter  | <img src="monster-knight.png" width="50px" /> | Gut ausbalancierter Krieger mit anständiger Stärke und Rüstung |
-| 👺 Dunkler Kobold | <img src="dark-goblin.png" width="50px" />    | Nicht sehr stark, aber mit schwerer, magischer Rüstung         |
+| Rollenname     | Bild                                          | Beschreibung                                                   |
+| -------------- | --------------------------------------------- | -------------------------------------------------------------- |
+| Pirat          | <img src="Pirate.png" width="50px" />         | Furchtloser Kämpfer mit guter Stärke und Rüstung               |
+| Steinkauer     | <img src="stone-chewer.png" width="50px" />   | Langsam, aber sehr stark und unempfindlich gegen Angriffe      |
+| Geisterkrieger | <img src="ghost-warrior.png" width="50px" />  | Schneller Krieger, schwer zu überwinden                        |
+| Außenweltler   | <img src="outworlder.png" width="50px" />     | Kann nur geringen Schaden anrichten, ist aber superschnell     |
+| Monsterritter  | <img src="monster-knight.png" width="50px" /> | Gut ausbalancierter Krieger mit anständiger Stärke und Rüstung |
+| Dunkler Kobold | <img src="dark-goblin.png" width="50px" />    | Nicht sehr stark, aber mit schwerer, magischer Rüstung         |
 
 Die folgenden Eigenschaften jedes Charakters definieren seine Stärke im Kampf:
 
