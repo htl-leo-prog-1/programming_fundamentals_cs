@@ -352,6 +352,15 @@ else
 * The <!-- .element: class="fragment" --> exercise is structured in levels. Try to solve as many as possible.
 
 
+## Exercise: Joker 🃏
+
+* This <!-- .element: class="fragment" --> is a larger exercise that you can use to prepare for exams
+* Specification <!-- .element: class="fragment" --> for the exercise is available on GitHub:
+  * [German](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/tree/main/exams/2022-10-06-joker)
+  * [English](https://github-com.translate.goog/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-10-06-joker/readme.md?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp) (auto-translated)
+* Here is a [sample solution](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-10-06-joker/Program.cs)
+
+
 ## Pro Tips
 
 ![Like a boss](https://c.tenor.com/TgDOSZ0PpNsAAAAd/zoolander-boss.gif)
