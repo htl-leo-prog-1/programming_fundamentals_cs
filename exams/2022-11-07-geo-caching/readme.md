@@ -23,6 +23,7 @@ You recognize that the creators of the Geocaching challenge have made a mistake 
 
 * Once the user has entered *q*, print out how much kilometers north/south and east/west the user has to go to reach the end point.
   * Assumption: Users can only go North, South, East, and West. They *cannot*  walk in diagonals.
+  * Example output: *You have to go 7km south and 3km west to find the "treasure"*.
 
 ## Additional Challenges
 
@@ -30,7 +31,7 @@ You recognize that the creators of the Geocaching challenge have made a mistake 
 
 * If the user enters an invalid value (e.g. direction *x*, negative distance), print an error message and keep asking for a correct input until you get one.
 
-* Calculate and print who much walking the user saved by going directly to the destination instead of walking all the movements. Example output: *You have to go 7km south and 3km west to find the "treasure"*.
+* Calculate and print who much walking the user saved by going directly to the destination instead of walking all the movements.
 
 ## Example
 
