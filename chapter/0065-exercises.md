@@ -47,3 +47,12 @@
 ![Manhattan Distance](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-07-geo-caching/illustration.png)
 
 </div></div>
+
+
+## Ping Pong Counter
+
+* A table tennis (aka *Ping Pong*) club approached you and asked you to build a counter app.
+  * It should make counting during matches easier for judges.
+* Specification for the exercise is available on GitHub:
+  * [German](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-11-10-ping-pong/readme-de.md) ([PDF](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-10-ping-pong/readme-de.pdf))
+  * [English](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-11-10-ping-pong/readme.md) ([PDF](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-10-ping-pong/readme.pdf))
