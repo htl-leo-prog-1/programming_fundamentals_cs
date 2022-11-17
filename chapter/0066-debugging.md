@@ -5,6 +5,13 @@
 [Image Source](https://education.nationalgeographic.org/resource/worlds-first-computer-bug)
 
 
+## Video Lecture
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ljJDK6pZLOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyro<span translate="no">&nbsp;scope&nbsp;</span>; picture-in-picture" allowfullscreen></iframe>
+
+[YouTube Playlist for course](https://youtube.com/playlist?list=PLhGL9p3BWHwsJN6kbQPOVZpEw2NXQXZQN)
+
+
 ## What is a Debugger?
 
 * Program <!-- .element: class="fragment" --> used to test and spot errors in computer software
