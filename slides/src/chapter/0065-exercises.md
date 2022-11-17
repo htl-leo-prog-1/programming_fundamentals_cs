@@ -56,3 +56,12 @@
 * Specification for the exercise is available on GitHub:
   * [German](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-11-10-ping-pong/readme-de.md) ([PDF](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-10-ping-pong/readme-de.pdf))
   * [English](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-11-10-ping-pong/readme.md) ([PDF](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-10-ping-pong/readme.pdf))
+
+
+## Coffee Machine
+
+* In this exercise, we develop a Coffee Machine simulation.
+  * We focus on the credit check and the calculation of the coins that we have to give back to our customers.
+* Specification for the exercise is available on GitHub:
+  * [Markdown](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-11-17-coffee-maker/readme.md)
+  * [PDF](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-17-coffee-maker/readme.pdf)
