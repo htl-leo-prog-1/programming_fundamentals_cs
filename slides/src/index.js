@@ -9,6 +9,8 @@ let deck = new Reveal({
   plugins: [markdown, highlight, notes, zoom, search]
 })
 
+deck.configure({ pdfSeparateFragments: false })
+
 deck.initialize({
   hash: true
 });
