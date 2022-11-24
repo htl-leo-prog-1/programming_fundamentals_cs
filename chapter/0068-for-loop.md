@@ -139,9 +139,9 @@ for (int y = 0; y < 15; y++)
    * If user's guess is **equal** to random number, print *Correct*
 4. Repeat <!-- .element: class="fragment" --> steps 2 and 3 until the user has guessed correctly
    * Once the user has guessed correctly, end the program
-5. **Different loops!**
-   * First, <!-- .element: class="fragment" --> implement the game using a `while` loop
-   * Next, <!-- .element: class="fragment" --> change your app to use a `for` loop
+5. Different <!-- .element: class="fragment" --> loops!
+   * First, implement the game using a `while` loop
+   * Next, change your app to use a `for` loop
 
 
 ## Exercise: Number Guessing Game 🎲
@@ -159,120 +159,144 @@ Correct
 ```
 
 
-### Exercise: Speed Coding Challenge
-
-![Speed Minion](https://media4.giphy.com/media/fBEMsUeGHdpsClFsxM/giphy.gif?cid=ecf05e47waysr97y1bx1rnzh4d9jj9iiu93459corz84xd71&rid=giphy.gif&ct=g)
-
-
-### Exercise: Speed Coding Challenge
+### Exercise: Paddle Game
 
 <div class="container" data-markdown><div class="col" data-markdown>
 
-1. Text-based <!-- .element: class="fragment" --> animation
-2. Character <!-- .element: class="fragment" --> starts in top left corner
-3. Moves <!-- .element: class="fragment" --> in random direction<br/>(must not move out of screen)
-   * No movement or ⬅️↖️⬆️↗️➡️↘️⬇️↙️
-4. Wait <!-- .element: class="fragment" --> to slow down animation
-5. Start <!-- .element: class="fragment" --> over with step 3
-6. End <!-- .element: class="fragment" --> program when user presses a key
+* We <!-- .element: class="fragment" --> build a paddle game.
+* You <!-- .element: class="fragment" --> can move a paddle around with the cursor keys.
+* You <!-- .element: class="fragment" --> have to keep a "ball" in the "air" using your paddle.
+* If <!-- .element: class="fragment" --> it hits the bottom of the window, the program ends.
+* Goals <!-- .element: class="fragment" --> of this exercise:
+  * Typing exercise
+  * Read existing code, understand it
 
 </div><div class="col" data-markdown>
 
-![Dancing Star](images/dancing-star.gif)
+![Paddle game](images/paddle.gif)
 
 </div></div>
 
 
-### Exercise: Speed Coding Challenge
+### Exercise: Paddle Game
 
 > Here is the code. Type it in and make it work as fast as you can! You are *not* allowed to copy/paste it!
 
 ```cs
-const int SLEEP_TIME = 50; // Sleep time in milliseconds
-const char ANIMATED_CHAR = '*';
-
-// Hide cursor. Reduces flickering.
+// Make the cursor invisible to speed up rendering
 Console.CursorVisible = false;
 
-// Clear console and write first * on position x=0/y=0.
-// NOTE that after writing the first *, the new position is 1/0.
+// Reset screen
 Console.Clear();
-Console.Write(ANIMATED_CHAR);
+Console.ResetColor();
 
-// Let the process sleep for a while to make animation slower.
-Thread.Sleep(SLEEP_TIME);
+// A bunch of constants to configure our game
+const int PADDLE_WIDTH = 10;
+const int PADDLE_DISTANCE_FROM_BOTTOM = 5;
+const int PADDLE_SPEED = 3;
+const int INITIAL_FRAMES_BETWEEN_BALL_MOVEMENTS = 750;
 
-// Loop until the user presses any key.
-while(!Console.KeyAvailable)
+// Position of the paddle. It starts horizontally in the middle of the screen.
+int paddlePosX = (Console.WindowWidth - PADDLE_WIDTH) / 2;
+int paddlePosY = Console.WindowHeight - PADDLE_DISTANCE_FROM_BOTTOM;
+
+// Position of the ball. It starts horizontally in the middle of the screen.
+int ballPosX = Console.WindowWidth / 2;
+int ballPosY = 1;
+
+// Speed vector of the ball.
+int speedVectorX = 1;
+int speedVectorY = 1;
+int framesBetweenBallMovements = INITIAL_FRAMES_BETWEEN_BALL_MOVEMENTS;
+
+// Helper variable to count frames
+int frameCount = 0;
+
+// End program when ball hits bottom of the screen
+while (ballPosY != Console.WindowHeight)
 {
-    // Write a Backspace and overwrite * with a space so that the * disappears.
-    Console.Write("\b ");
-
-    // Set default boundaries for random movement
-    int xMinMovement = -1; // We can go left
-    int xMaxMovement = 1; // We can go right
-    int yMinMovement = -1; // We can go up
-    int yMaxMovement = 1; // We can go down
-
-    // Get cursor position.
-    // NOTE that GetCursorPosition returns two values: left and top.
-    (int left, int top) = Console.GetCursorPosition();
-
-    // Correct cursor position. It is one off because we just wrote a space and that
-    // moved the cursor one step forward in X direction.
-    left--;
-
-    if (left == 0)
-    { 
-        // If we are on the leftmost position, we cannot go left any further.
-        xMinMovement = 0; 
+    // Draw the paddle
+    Console.SetCursorPosition(0, paddlePosY);
+    for (var i = 0; i < Console.WindowWidth; i++)
+    {
+        if (i >= paddlePosX && i <= paddlePosX + PADDLE_WIDTH) { Console.Write("="); }
+        else { Console.Write(" "); }
     }
 
-    if (left == Console.WindowWidth - 1)
-    { 
-        // If we are on the rightmost position, we cannot go right any further.
-        xMaxMovement = 0; 
+    // Every FRAMES_BETWEEN_BALL_MOVEMENTS frames, move the ball
+    if (frameCount == framesBetweenBallMovements)
+    {
+        // Delete the ball from it's old position
+        Console.SetCursorPosition(ballPosX, ballPosY);
+        Console.Write(' ');
+
+        // Move ball
+        ballPosX += speedVectorX;
+        ballPosY += speedVectorY;
+
+        // Did ball hit top of window or paddle?
+        if (ballPosY == 0 && speedVectorY < 0
+            || (ballPosY == paddlePosY
+                && ballPosX >= paddlePosX && ballPosX <= paddlePosX + PADDLE_WIDTH))
+        {
+            // Turn speed vector's Y component around
+            speedVectorY *= -1;
+
+            // Increase ball speed
+            framesBetweenBallMovements = Math.Max(framesBetweenBallMovements - 10, 0);
+        }
+
+        // Did ball hit left or right of window
+        if (ballPosX == 0 && speedVectorX < 0
+            || ballPosX == Console.WindowWidth && speedVectorX > 0)
+        {
+            // Turn speed vector's X component around
+            speedVectorX *= -1;
+        }
+
+        // Reset frame count
+        frameCount = 0;
+    }
+    else
+    {
+        // Increment frame count
+        frameCount++;
     }
 
-    if (top == 0)
-    { 
-        // If we are on the topmost position, we cannot go up any further.
-        yMinMovement = 0;
+    // Draw ball
+    Console.SetCursorPosition(ballPosX, ballPosY);
+    Console.Write('O');
+
+    // Check if key is available
+    if (Console.KeyAvailable)
+    {
+        // Key handling
+        switch (Console.ReadKey().Key)
+        {
+            case ConsoleKey.LeftArrow:
+                if (paddlePosX > PADDLE_SPEED)
+                {
+                    paddlePosX -= PADDLE_SPEED;
+                }
+                break;
+            case ConsoleKey.RightArrow:
+                if (paddlePosX < Console.WindowWidth - PADDLE_WIDTH - PADDLE_SPEED)
+                {
+                    paddlePosX += PADDLE_SPEED;
+                }
+                break;
+        }
     }
-
-    if (top == Console.WindowHeight - 1)
-    { 
-        // If we are on the bottommost position, we cannot go down any further.
-        yMaxMovement = 0; 
-    }
-
-    // Calculate random movement within calculated boundaries.
-    // NOTE that we have to add 1 to second parameter because the random value
-    // will be LOWER than the second parameter, NOT lower or equal.
-    int xMovement = Random.Shared.Next(xMinMovement, xMaxMovement + 1);
-    int yMovement = Random.Shared.Next(yMinMovement, yMaxMovement + 1);
-
-    // Go to new position and write *.
-    Console.SetCursorPosition(left + xMovement, top + yMovement);
-    Console.Write(ANIMATED_CHAR);
-
-    // Let the process sleep for a while to make animation slower.
-    Thread.Sleep(SLEEP_TIME);
 }
 
-// Enable cursor again.
-Console.CursorVisible = true;
+Console.Clear();
 ```
 
 
 ### Exercise: What We Have Learned
 
 * Hide/show <!-- .element: class="fragment" --> cursor with `Console.CursorVisible`
-* Put <!-- .element: class="fragment" --> process to sleep with `Thread.Sleep`
 * Check <!-- .element: class="fragment" --> if the user pressed a key with `Console.KeyAvailable`
-* Backspace <!-- .element: class="fragment" --> can be used to move cursor one to the left (`"\b"`)
-* Some <!-- .element: class="fragment" --> functions return multiple values
-  * Example: `(int left, int top) = Console.GetCursorPosition();`
 * We <!-- .element: class="fragment" --> can get/set cursor position
   * `Console.GetCursorPosition`
   * `Console.SetCursorPosition`
