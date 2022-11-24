@@ -3,6 +3,13 @@
 ![Hypnotic](https://64.media.tumblr.com/5f507b2deaa1fedf531636ed8cd95dfa/61d92977df3924b4-59/s500x750/274e24800946c366e6b934f3abfdca5516d6f205.gifv)
 
 
+## Video Lecture
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JzrA1qf5Xyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[YouTube Playlist for course](https://youtube.com/playlist?list=PLhGL9p3BWHwsJN6kbQPOVZpEw2NXQXZQN)
+
+
 ## The `for` Loop
 
 ```cs
