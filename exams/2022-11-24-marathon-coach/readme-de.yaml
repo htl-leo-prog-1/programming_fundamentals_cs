@@ -1,0 +1,14 @@
+title: PRO Test
+subtitle: 1AHIF 2022-11-24
+date: \today
+author:
+  - Rainer Stropek
+keywords: [HTBLA Leonding]
+papersize: a4
+links-as-notes: true
+toc: false
+lang: de
+titlepage: false
+footer-left: HTBLA Leonding
+logo-width: 200
+table-use-row-colors: true
