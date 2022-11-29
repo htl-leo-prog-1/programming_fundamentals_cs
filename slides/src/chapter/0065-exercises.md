@@ -65,3 +65,11 @@
 * Specification for the exercise is available on GitHub:
   * [Markdown](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-11-17-coffee-maker/readme.md)
   * [PDF](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-17-coffee-maker/readme.pdf)
+
+
+## Marathon Coach
+
+* You have to write a software that helps keeping runners on track regarding their time goal.
+* Specification for the exercise is available on GitHub:
+  * [German](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-11-24-marathon-coach/readme-de.md) ([PDF](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-24-marathon-coach/readme-de.pdf))
+  * [English](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2022-11-24-marathon-coach/readme.md) ([PDF](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2022-11-24-marathon-coach/readme.pdf))
