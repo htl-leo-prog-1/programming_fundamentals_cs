@@ -12,6 +12,18 @@ Ein derartiger Automat ist von Dir wie folgt zu simulieren:
 
 * Als Ausgabe wird dem Kunden die Parkdauer mitgeteilt. Bei Überschreitung der maximalen Parkdauer bedankt sich der Automat für die "Spende".
 
+## Anforderung
+
+Bei der Umsetzung dieser Aufgabe musst du dein Programm in mehrere Methoden aufteilen. Folgende Methoden sind insbesondere wichtig:
+
+* `PrintWelcome` zum Ausgeben der Begrüßungsnachricht.
+* `EnterCoins` fordert den Benutzer auf, Münzen einzuwerfen und erlaubt dem Benutzer die Eingabe des Münzwerts bzw. von *d* oder *D* zum Drucken des Tickets.
+* `AddParkingTime` erhöht die Parkzeit auf Grundlage der eingeworfenen Münzen.
+* `PrintParkingTime` gibt die aktuelle Parkzeit im Format *Stunden:Minuten* aus.
+* `PrintDonation` gibt die Höhe der "Spende" im Format *n Euros m Cents* (z.B. *1 Euro 95 Cents*) aus.
+
+Natürlich kannst du weitere Methoden verwenden.
+
 ## Musterein- und Ausgaben
 
 Hier einige Musterein- und Ausgaben des Programms. Beachte, dass die Ein- und Ausgaben möglichst exakt so erfolgen, wie in den Beispielen gezeigt.
