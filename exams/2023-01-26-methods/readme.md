@@ -1,6 +1,17 @@
 # Methods - Exercises
 
-## Level 1
+## Introduction
+
+In order to practice the correct usage of methods, you have to implement the following coding exercises in C#. Add all of them to the attached starter code [Program.cs](Program.cs). The starter code already contains the implementation for *Level 0* for illustration purposes. You have to implement the other methods.
+
+For each method...
+
+* ...add a code region similar to `#region Calculate Circle Area`...`#endregion`
+* ...create a `Run...` method (e.g. `RunCalculateCircleArea` for `CalculateCircleArea`, etc.) that asks the user for input parameter, calls the respective method, and prints the result on the screen.
+* ...implement the requested method.
+* ...try **all** the given test cases to make sure that your implementation works properly.
+
+## Level 0
 
 Write a method `CalculateCircleArea`. It gets the radius of the circle (`double`) as input parameter. It has to return the area of the circle (`double`) as the return value. Here is some test data that you have to use to verify your implementation:
 
@@ -10,15 +21,15 @@ Write a method `CalculateCircleArea`. It gets the radius of the circle (`double`
 |      0 |           0 |
 |      5 |     78.5398 |
 
-## Level 2
+## Level 1
 
 Write a method `RandomInRange`. It gets a minimum value (`int`) and a maximum value (`int`) as input parameters. It has to return a random number between the given minimum (including) and maximum (**including**).
 
 Test test your implementation, call `RandomInRange` 1 million times with minimum 0 and maximum 2. Count how often the result is 0, 1, and 2. Check that all three values occur roughly the same number of times.
 
-## Level 3
+## Level 2
 
-Write a method `ToFizzBuzz`. It gets a value (`int`) as input parameter. It returns a string containing *Fizz* if the input parameter can be divided by three without a remainder. It returns *Buzz* if divisible by five. It returns *FizzBuzz* if divisible by three and five. Here is some test data that you have to use to verify your implementation:
+Write a method `ToFizzBuzz`. It gets a value (`int`) as input parameter. It returns a `string` containing *Fizz* if the input parameter can be divided by three without a remainder. It returns *Buzz* if divisible by five. It returns *FizzBuzz* if divisible by three and five. Here is some test data that you have to use to verify your implementation:
 
 | Input |   Result |
 | ----: | -------: |
@@ -29,9 +40,23 @@ Write a method `ToFizzBuzz`. It gets a value (`int`) as input parameter. It retu
 |    10 |     Buzz |
 |    15 | FizzBuzz |
 
+## Level 3
+
+Write a method `FibonacciByIndex`. It gets an index (`int`) as input parameter. It returns the index'th element (zero-based) of the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) (`int`). Here is some test data that you have to use to verify your implementation ([source](https://planetmath.org/listoffibonaccinumbers)):
+
+| Input |      Result |
+| ----: | ----------: |
+|     0 |           0 |
+|     1 |           1 |
+|     2 |           1 |
+|     3 |           3 |
+|    10 |          55 |
+|    30 |      514229 |
+|    50 | 12586269025 |
+
 ## Level 4
 
-Write a method `AskForNumberInRange`. It gets a minimum value (`int`) and a maximum value (`int`) as input parameters. The method asks the user to enter a number between minimum (including) and maximum (including). It keeps asking until the user enters a valid number. The method returns the number the user entered.
+Write a method `AskForNumberInRange`. It gets a minimum value (`int`) and a maximum value (`int`) as input parameters. The method asks the user to enter a number between minimum (including) and maximum (including). It keeps asking until the user enters a valid number. The method returns the number the user entered (`int`ä#).
 
 Here is the input/output of the method when called with minimum 5 and maximum 10. You implementation must produce **exactly** that output when the user enters 0, then 11, then 6.
 
@@ -47,7 +72,7 @@ Thank you, your input is valid.
 
 ## Level 5
 
-Write a method `IsPalindrome`. It gets a word (`string`) as input parameter. It returns true if the word is a palindrome (reads the same backwards as forwards), otherwise false. Here is some test data that you have to use to verify your implementation:
+Write a method `IsPalindrome`. It gets a word (`string`) as input parameter. It returns a `bool` value. True is returned if the word is a palindrome (reads the same backwards as forwards), otherwise false. Here is some test data that you have to use to verify your implementation:
 
 | Input   | Result |
 | ------- | ------ |
@@ -69,7 +94,7 @@ Level 5 was too simple for you? Extend `IsPalindrome` so that it ignores spaces,
 
 ## Level 7
 
-Write a method `ChartBar`. It gets a value (`double`) as input parameter. It returns an empty string if the input value is lower than zero or greater than one. Otherwise, it returns a string that could be used in a chart. The following table illustrates the result for all possible value ranges:
+Write a method `ChartBar`. It gets a value (`double`) as input parameter. It returns an empty `string` if the input value is lower than zero or greater than one. Otherwise, it returns a string that could be used in a chart. The following table illustrates the result for all possible value ranges:
 
 | Value from | Value to | Result for this value range |
 | ---------: | -------: | --------------------------- |
@@ -87,7 +112,7 @@ Write a method `ChartBar`. It gets a value (`double`) as input parameter. It ret
 
 ## Level 8
 
-Write a method `CountSmilingFaces`. It gets a text (`string`) as input parameter. It returns the number of smiling faces (`:-)`) in the input text. Here is some test data that you have to use to verify your implementation:
+Write a method `CountSmilingFaces`. It gets a text (`string`) as input parameter. It returns (`int`) the number of smiling faces (`:-)`) in the input text. Here is some test data that you have to use to verify your implementation:
 
 | Input text     | Result |
 | -------------- | -----: |
