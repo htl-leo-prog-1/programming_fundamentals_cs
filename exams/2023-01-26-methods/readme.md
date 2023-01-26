@@ -51,7 +51,7 @@ Write a method `FibonacciByIndex`. It gets an index (`int`) as input parameter. 
 |     2 |           1 |
 |     3 |           2 |
 |    10 |          55 |
-|    30 |      514229 |
+|    30 |      832040 |
 |    50 | 12586269025 |
 
 ## Level 4
