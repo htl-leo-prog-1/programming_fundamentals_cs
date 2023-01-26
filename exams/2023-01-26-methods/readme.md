@@ -123,3 +123,21 @@ Write a method `CountSmilingFaces`. It gets a text (`string`) as input parameter
 | `..:-)..:-)..` |      2 |
 | `:-):):-)`     |      2 |
 | `:-(`          |      0 |
+
+## Level 9
+
+Write a method `HighestInGeometricSequence`. It gets `a` (`double`), `r` (`double`), and `maximum` (`double`) as input parameters. It returns (`double`) the highest element in the following [geometric sequence](https://www.mathsisfun.com/algebra/sequences-sums-geometric.html) that is lower than the `maximum` input parameter:
+
+$\displaystyle\sum_{k=0}^{n - 1} (ar^k) = a + ar + ar^2 + ... + ar^{(n-1)}$
+
+Here is some test data that you have to use to verify your implementation:
+
+|    a |    r |    Maximum |     Result |
+| ---: | ---: | ---------: | ---------: |
+|   10 |    2 |       1500 |       1280 |
+|  0.2 |   50 | 65_000_000 | 62_500_000 |
+|    3 |  0.8 |          2 |       1.92 |
+
+Pay particular attention to the last test case. It uses a value of `r` that is &lt; 1. Therefore, the sequence looks like that:
+
+![Geometric sequence](geometric-sequence.png)
