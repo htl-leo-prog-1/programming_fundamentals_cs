@@ -25,7 +25,7 @@ Write a method `CalculateCircleArea`. It gets the radius of the circle (`double`
 
 Write a method `RandomInRange`. It gets a minimum value (`int`) and a maximum value (`int`) as input parameters. It has to return a random number between the given minimum (including) and maximum (**including**).
 
-Test test your implementation, call `RandomInRange` 1 million times with minimum 0 and maximum 2. Count how often the result is 0, 1, and 2. Check that all three values occur roughly the same number of times.
+To test your implementation, call `RandomInRange` 1 million times with minimum 0 and maximum 2. Count how often the result is 0, 1, and 2. Check that all three values occur roughly the same number of times.
 
 ## Level 2
 
@@ -49,9 +49,9 @@ Write a method `FibonacciByIndex`. It gets an index (`int`) as input parameter. 
 |     0 |           0 |
 |     1 |           1 |
 |     2 |           1 |
-|     3 |           3 |
+|     3 |           2 |
 |    10 |          55 |
-|    30 |      514229 |
+|    30 |      832040 |
 |    50 | 12586269025 |
 
 ## Level 4
