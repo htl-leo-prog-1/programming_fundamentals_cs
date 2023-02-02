@@ -15,7 +15,7 @@ Write a method `DigitIntoLongText`. It receives an input parameter `number` (dat
 |     2 | two   |
 |     3 | three |
 |   ... | ...   |
-|     9 | three |
+|     9 | nine  |
 
 Write a program where the user can enter a digit between 0 and 9. Call `DigitIntoLongText` and pass the entered digit as the input parameter. Print the result of the method on the screen. Repeat asking until the user enters *quit*.
 
@@ -78,7 +78,7 @@ Extend the method `NumberIntoLongText` so that it supports parameter values betw
 |    98 | ninetyone  |
 |    99 | ninetynine |
 
-**Important:** Use the existing method `DigitIntoLongText` inside `NumberIntoLongText` where possible (e.g. *twentytwo* contains the word *two*, wich is the result of `DigitIntoLongText` for 2).
+**Important:** Use the existing method `DigitIntoLongText` inside `NumberIntoLongText` where possible (e.g. *twentytwo* contains the word *two*, which is the result of `DigitIntoLongText` for 2).
 
 Sample output:
 
