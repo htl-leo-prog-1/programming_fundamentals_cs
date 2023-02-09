@@ -77,3 +77,20 @@
 
 </div></div>
 
+
+## Methods, Methods, Methods
+
+* Practice writing methods by working your way up from level 0 to level 9
+  * Includes exercises for working with strings (not relevant for second exam)
+* Specification for the exercise is available on GitHub:
+  * [English](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2023-01-26-methods/readme.md)
+* [Starter Code](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2023-01-26-methods/Program.cs)
+
+
+## Number Formatter
+
+* Write methods to turn numbers into text
+  * Exercise includes working with strings, therefore it is not relevant for second exam
+* Specification for the exercise is available on GitHub:
+  * [English](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2023-02-01-number-as-text/readme.md)
+* [Sample Solution](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2023-02-01-number-as-text/solution/Program.cs)
