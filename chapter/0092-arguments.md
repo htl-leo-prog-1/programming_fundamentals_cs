@@ -47,4 +47,4 @@ string secondArgument = args[1];
 
 Add arguments to *.vscode/launch.json*
 
-![Passing arguments to the debugger](/images/debugger-args.png)
+![Passing arguments to the debugger](images/debugger-args.png)
