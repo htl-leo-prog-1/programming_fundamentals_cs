@@ -158,6 +158,13 @@ else
 You <!-- .element: class="fragment" --> will learn more about instance methods - including how<br/>to create your own ones - later when we talk about classes and structures
 
 
+## Characters
+
+* The <!-- .element: class="fragment" --> `char` data type represents a single character in C#
+* While <!-- .element: class="fragment" --> string literals are enclosed in double quotes (`"`), character literals are enclosed in **single quotes** (`'`)
+  * Example: `char singleChar = 'X';`
+
+
 ## Accessing Strings Character By Character
 
 > You can access the character at index n using `myString[n]`
@@ -172,6 +179,16 @@ for (int i = 0; i < myName.Length; i++)
   Console.WriteLine(currentChar);
 }
 ```
+
+
+## Important &nbsp;<span translate="no">char</span>-Functions and Properties
+
+| Function/Property | Description |
+|---|---|
+| <span translate="no">[IsDigit](https://learn.microsoft.com/en-us/dotnet/api/system.char.isdigit?view=net-7.0#system-char-isdigit(system-char))</span> | Indicates whether the specified Unicode character is categorized as a decimal digit. |
+| <span translate="no">[IsLetter](https://learn.microsoft.com/en-us/dotnet/api/system.char.isletter)</span> | Indicates whether a character is categorized as a letter. |
+| <span translate="no">[IsUpper](https://learn.microsoft.com/en-us/dotnet/api/system.char.isupper?view=net-7.0#system-char-isupper(system-char)), [IsLower](https://learn.microsoft.com/en-us/dotnet/api/system.char.islower?view=net-7.0#system-char-islower(system-char))</span> | Indicates whether the specified Unicode character is categorized as a lowercase/uppercase letter. |
+| <span translate="no">[ToUpper](https://learn.microsoft.com/en-us/dotnet/api/system.char.toupper?view=net-7.0#system-char-toupper(system-char)), [ToLower](https://learn.microsoft.com/en-us/dotnet/api/system.char.tolower?view=net-7.0#system-char-tolower(system-char))</span> | Converts the value of a Unicode character to its lowercase/uppercase equivalent. |
 
 
 ## ⚠️ Strings Are Read-Only in C#
