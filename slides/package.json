@@ -19,12 +19,9 @@
     "url": "https://github.com/htl-leo-prog-1/programming_fundamentals_cs/issues"
   },
   "homepage": "https://github.com/htl-leo-prog-1/programming_fundamentals_cs/",
-  "dependencies": {
-    "reveal.js": "^4.1.0"
-  },
   "devDependencies": {
-    "esbuild": "^0.15.13",
-    "fs-extra": "^10.0.0",
+    "esbuild": "^0.17.11",
+    "fs-extra": "^11.1.0",
     "lec": "^1.0.1",
     "line-ending-corrector": "^1.0.1",
     "live-server": "^1.2.1",
@@ -32,6 +29,7 @@
     "npm-run-all": "^4.1.5",
     "recursive-copy": "^2.0.11",
     "replace-in-file": "^6.3.5",
+    "reveal.js": "^4.4.0",
     "watch": "^1.0.2"
   },
   "type": "module"
