@@ -154,6 +154,27 @@ if (TryDivide(x, y, │ out │ result))
 <!-- .element: class="fragment" -->
 
 
+## Special Reference Parameter: `out`
+
+Example for `TryParse`:
+
+```csharp
+string input = "1234";
+int number;
+
+//                      +--- Note the out parameter here!
+//                      v
+if (int.TryParse(input, out number)) // DOES NOT CRASH if input contains an invalid number
+{
+    System.Console.WriteLine(number);
+}
+else
+{
+    System.Console.WriteLine("Sorry, this is not a number");
+}
+```
+
+
 ## *Out*-Parameter Example
 
 ```cs[|1,7-8,11-12|18-21]
