@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="173.41"
+   inkscape:export-xdpi="173.41"
+   inkscape:export-filename="\\wsl.localhost\Ubuntu-20.04\home\rainer\github\htl-csharp-private\2023-03-23-iban\iban-no.png"
+   sodipodi:docname="iban-no.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 239.65146 87.001427"
+   height="87.001427mm"
+   width="239.65146mm">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1129"
+     inkscape:window-width="1920"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="272.8074"
+     inkscape:cx="432.02662"
+     inkscape:zoom="0.98994949"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-5.1329465,-11.444047)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <text
+       id="text835"
+       y="25.09761"
+       x="9.8273659"
+       style="font-size:12.7px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:12.7px;stroke-width:0.264583"
+         y="25.09761"
+         x="9.8273659"
+         id="tspan833"
+         sodipodi:role="line">NO 83 3000 123456 7</tspan></text>
+    <rect
+       y="11.944047"
+       x="5.6329465"
+       height="17.008928"
+       width="22.904243"
+       id="rect837"
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-opacity:1;stop-color:#000000" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-opacity:1;stop-color:#000000"
+       id="rect839"
+       width="22.904243"
+       height="17.008928"
+       x="28.537174"
+       y="11.944047" />
+    <rect
+       y="11.944047"
+       x="51.441422"
+       height="17.008928"
+       width="39.157219"
+       id="rect841"
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-opacity:1;stop-color:#000000" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-opacity:1;stop-color:#000000"
+       id="rect843"
+       width="52.575371"
+       height="17.008928"
+       x="90.598671"
+       y="11.944047" />
+    <rect
+       y="11.944047"
+       x="143.17438"
+       height="17.008928"
+       width="14.96674"
+       id="rect845"
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-opacity:1;stop-color:#000000" />
+    <path
+       id="path849"
+       d="m 150.43452,28.537201 v 11.528274 h 15.30804"
+       style="fill:none;stroke:#ff0000;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;stroke-width:0.264583"
+       x="166.68748"
+       y="42.484516"
+       id="text853"><tspan
+         sodipodi:role="line"
+         id="tspan851"
+         x="166.68748"
+         y="42.484516"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.264583">National check digit</tspan><tspan
+         id="tspan879"
+         sodipodi:role="line"
+         x="166.68748"
+         y="51.34037"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.264583">(always 7 for Norway)</tspan></text>
+    <path
+       sodipodi:nodetypes="ccc"
+       style="fill:none;stroke:#ff0000;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 117.92857,28.537201 v 31.18534 h 15.30804"
+       id="path855" />
+    <text
+       id="text859"
+       y="62.403076"
+       x="134.18153"
+       style="font-size:7.05556px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.264583"
+         y="62.403076"
+         x="134.18153"
+         id="tspan857"
+         sodipodi:role="line">Account number</tspan></text>
+    <path
+       id="path861"
+       d="m 71.815475,28.537201 v 42.902602 h 15.30804"
+       style="fill:none;stroke:#ff0000;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;stroke-width:0.264583"
+       x="88.068436"
+       y="74.162842"
+       id="text865"><tspan
+         sodipodi:role="line"
+         id="tspan863"
+         x="88.068436"
+         y="74.162842"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.264583">Bank code</tspan></text>
+    <path
+       sodipodi:nodetypes="ccc"
+       style="fill:none;stroke:#ff0000;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 40.821427,28.537201 v 54.997841 h 15.30804"
+       id="path867" />
+    <text
+       id="text871"
+       y="85.922615"
+       x="57.074387"
+       style="font-size:7.05556px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.264583"
+         y="85.922615"
+         x="57.074387"
+         id="tspan869"
+         sodipodi:role="line">Checksum</tspan></text>
+    <path
+       id="path873"
+       d="m 17.953867,28.537201 v 65.424611 h 15.30804"
+       style="fill:none;stroke:#ff0000;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;stroke-width:0.264583"
+       x="34.206825"
+       y="97.026093"
+       id="text877"><tspan
+         sodipodi:role="line"
+         id="tspan875"
+         x="34.206825"
+         y="97.026093"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.264583">Country code (always NO)</tspan></text>
+  </g>
+</svg>
