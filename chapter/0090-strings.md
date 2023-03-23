@@ -191,6 +191,27 @@ for (int i = 0; i < myName.Length; i++)
 | <span translate="no">[ToUpper](https://learn.microsoft.com/en-us/dotnet/api/system.char.toupper?view=net-7.0#system-char-toupper(system-char)), [ToLower](https://learn.microsoft.com/en-us/dotnet/api/system.char.tolower?view=net-7.0#system-char-tolower(system-char))</span> | Converts the value of a Unicode character to its lowercase/uppercase equivalent. |
 
 
+## Important &nbsp;<span translate="no">char</span>-Functions and Properties
+
+Example that uses the <span translate="no">[IsDigit](https://learn.microsoft.com/en-us/dotnet/api/system.char.isdigit?view=net-7.0#system-char-isdigit(system-char))</span> method:
+
+```cs
+bool ContainsOnlyDigits(string input)
+{
+  for (int i = 0; i < input.Length; i++)
+  {
+    if (!char.IsDigit(input[i]))
+    {
+      return false;
+    }
+  }
+
+  return true;
+}
+```
+
+
+
 ## ⚠️ Strings Are Read-Only in C#
 
 * In <!-- .element: class="fragment" --> C#, strings **cannot be changed** after you built them
