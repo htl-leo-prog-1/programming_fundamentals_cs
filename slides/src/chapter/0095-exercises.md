@@ -73,10 +73,26 @@
 * Create a command line application in C# that decodes [color bands on resistors](https://www.electronics-tutorials.ws/resistor/res_2.html) and calculates the resistor value and tolerance.
 * Specification for the exercise is available on GitHub:
   * [English](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2023-03-16-resistor/readme.md)
-* Sample solution will follow shortly
+* [Sample solution](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2023-03-16-resistor/solution)
 
 </div><div class="col" data-markdown>
 
 ![Color bands on resistors](https://camo.githubusercontent.com/fd31d5f16e3cd8245584d902e7b6de34894da3a60f6280447aa1414582ef9d11/68747470733a2f2f7777772e646967696b65792e61742f2d2f6d656469612f496d616765732f4d61726b6574696e672f5265736f75726365732f43616c63756c61746f722f7265736973746f722d636f6c6f722d63686172742e706e673f6c613d656e2d41542674733d34646236303366352d346539622d343735392d383462372d323161303464313862316138)
+
+</div></div>
+
+
+## IBAN Builder/Analyzer
+
+<div class="container" data-markdown><div class="col" data-markdown>
+
+* Your job in today's exercise is to build, analyze, and verify IBANs.
+* Specification for the exercise is available on GitHub:
+  * [English](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2023-03-23-iban/readme.md)
+* [Sample solution](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/blob/main/exams/2023-03-23-iban/solution)
+
+</div><div class="col" data-markdown>
+
+![IBAN](https://github.com/htl-leo-prog-1/programming_fundamentals_cs/raw/main/exams/2023-03-23-iban/iban-no.png)
 
 </div></div>
