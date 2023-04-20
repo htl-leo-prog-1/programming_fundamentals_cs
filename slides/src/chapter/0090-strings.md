@@ -211,7 +211,6 @@ bool ContainsOnlyDigits(string input)
 ```
 
 
-
 ## ⚠️ Strings Are Read-Only in C#
 
 * In <!-- .element: class="fragment" --> C#, strings **cannot be changed** after you built them
